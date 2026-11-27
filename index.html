@@ -1428,30 +1428,74 @@
     }
 
     .founder {
+      position: relative;
       display: grid;
-      grid-template-columns: 120px 1fr;
-      gap: 24px;
-      align-items: center;
+      grid-template-columns: minmax(200px, 42%) 1fr;
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 24px;
-      padding: 28px
+      overflow: hidden;
+      box-shadow: 0 18px 40px -28px rgba(31, 36, 46, .35);
+      transition: transform .35s ease, box-shadow .35s ease
     }
 
-    .avatar {
-      aspect-ratio: 1;
-      border-radius: 50%;
-      background: var(--red);
-      color: #fff;
-      display: grid;
-      place-items: center;
-      font-family: var(--tel);
-      font-size: 2.6rem;
-      border: 6px solid var(--blush2)
+    .founder:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 26px 50px -26px rgba(209, 32, 47, .35)
+    }
+
+    .founder-photo {
+      position: relative;
+      margin: 0;
+      min-height: 340px;
+      background: var(--blush2);
+      overflow: hidden
+    }
+
+    .founder-photo img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .6s ease
+    }
+
+    .founder:hover .founder-photo img {
+      transform: scale(1.04)
+    }
+
+    /* soft fade from photo into the card + gold accent edge */
+    .founder-photo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 55%, rgba(22, 17, 14, .45));
+      pointer-events: none
+    }
+
+    .founder-photo::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, var(--gold), var(--red));
+      z-index: 1
+    }
+
+    .founder-body {
+      padding: 32px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center
     }
 
     .founder h3 {
-      font-size: 1.4rem
+      font-size: 1.45rem;
+      line-height: 1.2
     }
 
     .founder .role {
@@ -1459,12 +1503,15 @@
       font: 600 .78rem var(--head);
       letter-spacing: .14em;
       text-transform: uppercase;
-      margin: 6px 0 8px
+      margin: 8px 0 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line)
     }
 
     .founder p {
       margin: 0;
-      font-size: .95rem
+      font-size: .95rem;
+      line-height: 1.7
     }
 
     .team5 {
@@ -2142,9 +2189,21 @@
         text-align: center
       }
 
-      .founder .avatar {
-        width: 110px;
-        margin: 0 auto
+      .founder-photo {
+        min-height: 0;
+        aspect-ratio: 4 / 4.2
+      }
+
+      .founder-photo::before {
+        top: auto;
+        left: 0;
+        width: auto;
+        height: 4px;
+        background: linear-gradient(90deg, var(--gold), var(--red))
+      }
+
+      .founder-body {
+        padding: 26px 22px 30px
       }
 
       .foot-mem {
@@ -2593,18 +2652,20 @@
             continue his work in Rajahmundry.</p>
           <div class="founders" style="text-align:left">
             <div class="founder rv">
-              <div class="avatar" aria-hidden="true">J K</div>
-              <div>
+              <figure class="founder-photo">
+                <img src="images/james-watt-kommu.jpg" alt="Dr. James Watt Kommu" loading="lazy" style="object-position:55% 20%">              </figure>
+              <div class="founder-body">
                 <h3>Dr. James Watt Kommu</h3>
                 <p class="role">Founder</p>
                 <p>Dr. James Watt Kommu is a visionary entrepreneur, philanthropist, and Vice President of Samanvaye Foundation. He leads multiple organizations, including Global Infotech Solutions, R.L. Klein, Sonus Software Solutions, and SQL Data Solutions Inc. His leadership reflects a strong commitment to innovation, business excellence, social empowerment, and community development. As President of the Telugu Association of Utah and Founder of SJK Entertainments, he actively promotes cultural heritage and community engagement.</p>
               </div>
             </div>
             <div class="founder rv">
-              <div class="avatar" aria-hidden="true">S K</div>
-              <div>
+              <figure class="founder-photo">
+                <img src="images/sudha-kommu.jpg" alt="Sudha Kommu" loading="lazy" style="object-position:50% 30%">              </figure>
+              <div class="founder-body">
                 <h3>Sudha Kommu</h3>
-                <p class="role">HONORY PRESIDENT</p>
+                <p class="role">Honorary President</p>
                 <p>Sudha Kommu is a dedicated leader and philanthropist with a BA LLB qualification. As Honorary President of DTS Swara Raga Sudha, she is committed to promoting music, arts, cultural heritage, and community engagement while inspiring young talent and preserving artistic traditions.</p>
               </div>
             </div>

@@ -1,0 +1,3170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swara Raga Sudha (DTS)</title>
+  <meta name="description"
+    content="Swara Raga Sudha (DTS) – a singers' organisation in Rajahmundry, founded in loving memory of Dr. Talari Satish garu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+Telugu:wght@500;700&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500;1,600&display=swap"
+    rel="stylesheet">
+  <style>
+    /* Layout modelled on nrityangana.in: blush-white sections, crimson accent, Kumbh Sans + Nunito,
+       arched "temple" frames, black footer. Added: gold accents, video banner hero, Godavari + instrument imagery. */
+    :root {
+      --red: #d1202f;
+      --red-d: #a8141f;
+      --gold: #c9a04a;
+      --gold-l: #f1d79a;
+      --ink: #1f242e;
+      --night: #16110e;
+      --text: #5f6266;
+      --blush: #fff8fd;
+      --blush2: #fcedf1;
+      --line: #eee3e8;
+      --white: #ffffff;
+      --black: #0c0c0d;
+      --head: "Kumbh Sans", "Segoe UI", system-ui, sans-serif;
+      --body: "Nunito", "Segoe UI", system-ui, sans-serif;
+      --tel: "Noto Serif Telugu", "Gautami", "Nirmala UI", serif;
+      --serif: "Cormorant Garamond", Georgia, serif;
+      color-scheme: light;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      background: var(--white);
+      color: var(--text);
+      font-family: var(--body);
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-x: hidden
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: var(--head);
+      color: var(--ink);
+      font-weight: 600;
+      line-height: 1.15;
+      margin: 0;
+      text-wrap: balance
+    }
+
+    a {
+      color: inherit
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px
+    }
+
+    .view[hidden] {
+      display: none
+    }
+
+    section {
+      padding: 100px 0
+    }
+
+    .blush {
+      background: linear-gradient(180deg, var(--blush) 0%, #fff 100%)
+    }
+
+    .pink {
+      background: var(--blush2)
+    }
+
+    .center {
+      text-align: center
+    }
+
+    .center .lede {
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    /* headings */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font: 600 .82rem var(--head);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin: 0 0 14px
+    }
+
+    /* classical-instrument motif: an instrument silhouette leads each eyebrow (veena, tambura,
+       mridangam, venu, tabla — assigned in turn by script), and a "strings" ornament sits under each h2 */
+    .eyebrow::before {
+      content: "";
+      flex: none;
+      width: 44px;
+      height: 22px;
+      background: currentColor;
+      -webkit-mask: var(--inst, var(--inst-veena)) center / contain no-repeat;
+      mask: var(--inst, var(--inst-veena)) center / contain no-repeat
+    }
+
+    .center .eyebrow::after {
+      content: "";
+      flex: none;
+      width: 44px;
+      height: 22px;
+      background: currentColor;
+      -webkit-mask: var(--inst, var(--inst-veena)) center / contain no-repeat;
+      mask: var(--inst, var(--inst-veena)) center / contain no-repeat;
+      transform: scaleX(-1)
+    }
+
+    :root {
+      --inst-veena: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 24'%3E%3Ccircle cx='9' cy='12' r='8'/%3E%3Crect x='14' y='10' width='30' height='4' rx='2'/%3E%3Ccircle cx='35' cy='18' r='4'/%3E%3Crect x='43' y='7' width='3' height='10' rx='1'/%3E%3C/svg%3E");
+      --inst-tambura: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 24'%3E%3Cellipse cx='9' cy='12' rx='8' ry='9'/%3E%3Crect x='15' y='10.5' width='31' height='3' rx='1.5'/%3E%3Crect x='38' y='7' width='2' height='10' rx='1'/%3E%3Crect x='43' y='7' width='2' height='10' rx='1'/%3E%3C/svg%3E");
+      --inst-mridangam: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 24'%3E%3Cpath fill-rule='evenodd' d='M9 4h30c5 3 5 13 0 16H9C4 17 4 7 9 4zM15 6.5l3.5 11h1.5L16.5 6.5zM23 6.5l3.5 11h1.5L24.5 6.5zM31 6.5l3.5 11h1.5L32.5 6.5z'/%3E%3C/svg%3E");
+      --inst-venu: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 24'%3E%3Cpath fill-rule='evenodd' d='M3 9.5h42a2.5 2.5 0 010 5H3a2.5 2.5 0 010-5zM8 11h2.5v2H8zM18 11h2v2h-2zM23 11h2v2h-2zM28 11h2v2h-2zM33 11h2v2h-2zM38 11h2v2h-2z'/%3E%3C/svg%3E");
+      --inst-tabla: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 24'%3E%3Cellipse cx='14' cy='6' rx='8' ry='2.5'/%3E%3Cpath d='M6 7h16l-2 14H8z'/%3E%3Cellipse cx='33' cy='9' rx='10' ry='2.5'/%3E%3Cpath d='M23 10h20c0 7-4 11-10 11s-10-4-10-11z'/%3E%3C/svg%3E");
+    }
+
+    .eyebrow[data-inst=veena] { --inst: var(--inst-veena) }
+    .eyebrow[data-inst=tambura] { --inst: var(--inst-tambura) }
+    .eyebrow[data-inst=mridangam] { --inst: var(--inst-mridangam) }
+    .eyebrow[data-inst=venu] { --inst: var(--inst-venu) }
+    .eyebrow[data-inst=tabla] { --inst: var(--inst-tabla) }
+
+    .eyebrow + h2::after {
+      content: "";
+      display: block;
+      width: 170px;
+      height: 14px;
+      margin-top: 16px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 170 14'%3E%3Cg stroke='%23c9a04a' stroke-width='1'%3E%3Cpath d='M0 3.5h70M0 7h70M0 10.5h70M100 3.5h70M100 7h70M100 10.5h70'/%3E%3C/g%3E%3Ccircle cx='85' cy='7' r='6' fill='none' stroke='%23c9a04a' stroke-width='1.5'/%3E%3Ccircle cx='85' cy='7' r='2.4' fill='%23d1202f'/%3E%3Ccircle cx='74' cy='7' r='1.4' fill='%23c9a04a'/%3E%3Ccircle cx='96' cy='7' r='1.4' fill='%23c9a04a'/%3E%3C/svg%3E") center / contain no-repeat
+    }
+
+    .center .eyebrow + h2::after {
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .eyebrow + h2 + .divider {
+      display: none
+    }
+
+    .eyebrow .te {
+      font-family: var(--tel);
+      letter-spacing: 0;
+      text-transform: none;
+      font-size: .95rem;
+      font-weight: 500
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: clamp(2.2rem, 4.4vw, 3.3rem);
+      letter-spacing: 0
+    }
+
+    .lede {
+      max-width: 60ch;
+      margin: 18px 0 0
+    }
+
+    .divider {
+      display: flex;
+      justify-content: center;
+      margin: 18px 0 0;
+      color: var(--gold)
+    }
+
+    .divider svg {
+      width: 140px;
+      height: 18px
+    }
+
+    /* buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 32px;
+      border-radius: 40px;
+      text-decoration: none;
+      font: 600 .82rem var(--head);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      border: 2px solid var(--red);
+      cursor: pointer;
+      transition: background .25s, color .25s, border-color .25s
+    }
+
+    .btn.primary {
+      background: var(--red);
+      color: #fff
+    }
+
+    .btn.primary:hover {
+      background: var(--red-d);
+      border-color: var(--red-d)
+    }
+
+    .btn.ghost {
+      background: transparent;
+      color: var(--red)
+    }
+
+    .btn.ghost:hover {
+      background: var(--red);
+      color: #fff
+    }
+
+    .btn.dark {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: #fff
+    }
+
+    .btn.dark:hover {
+      background: var(--red);
+      border-color: var(--red)
+    }
+
+    .btn.light {
+      background: #fff;
+      border-color: #fff;
+      color: var(--red)
+    }
+
+    .btn.light:hover {
+      background: transparent;
+      color: #fff
+    }
+
+    .btn.outline-w {
+      background: transparent;
+      border-color: rgba(255, 255, 255, .7);
+      color: #fff
+    }
+
+    .btn.outline-w:hover {
+      background: #fff;
+      color: var(--ink)
+    }
+
+    .btns {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap
+    }
+
+    /* top bar + header */
+    .topbar {
+      background: var(--black);
+      color: #cfcfd2;
+      font-size: .85rem
+    }
+
+    .topbar .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      flex-wrap: wrap
+    }
+
+    .topbar .mem {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center
+    }
+
+    .topbar .mem i {
+      font-style: normal;
+      color: var(--gold-l)
+    }
+
+    .social {
+      display: flex;
+      gap: 8px
+    }
+
+    .social a {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(255, 255, 255, .08);
+      color: #fff;
+      transition: background .2s
+    }
+
+    .social a:hover {
+      background: var(--red)
+    }
+
+    .social svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor
+    }
+
+    header.site {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255, 255, 255, .97);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 1px 0 var(--line)
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px 24px
+    }
+
+    .brand img {
+      height: 64px;
+      width: auto
+    }
+
+    nav.main ul {
+      list-style: none;
+      display: flex;
+      gap: 4px;
+      margin: 0;
+      padding: 0
+    }
+
+    nav.main a {
+      display: block;
+      padding: 10px 14px;
+      text-decoration: none;
+      font: 600 .86rem var(--head);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink);
+      position: relative
+    }
+
+    nav.main a::after {
+      content: "";
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 4px;
+      height: 2px;
+      background: var(--red);
+      transform: scaleX(0);
+      transition: transform .25s
+    }
+
+    nav.main a:hover,
+    nav.main a[aria-current=page] {
+      color: var(--red)
+    }
+
+    nav.main a:hover::after,
+    nav.main a[aria-current=page]::after {
+      transform: scaleX(1)
+    }
+
+    .nav .btn {
+      padding: 12px 24px
+    }
+
+    .burger {
+      display: none;
+      background: none;
+      border: 0;
+      padding: 8px;
+      cursor: pointer
+    }
+
+    .burger span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: var(--ink);
+      margin: 6px 0;
+      transition: transform .25s, opacity .25s
+    }
+
+    /* decorative mandala */
+    .mandala {
+      position: absolute;
+      pointer-events: none;
+      color: var(--red);
+      opacity: .08;
+      animation: spin 90s linear infinite
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    /* ---------- HERO VIDEO BANNER ---------- */
+    .hero {
+      position: relative;
+      background: var(--night);
+      line-height: 0
+    }
+
+    .hero-video {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 80px);
+    object-fit: cover;
+    object-position: center;
+    background: var(--night);
+}
+    @media (max-width: 768px) {
+    .hero-video {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+}
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+      border: 0
+    }
+
+    .notice {
+      background: var(--red);
+      color: #fff;
+      padding: 14px 0;
+      font-size: .98rem
+    }
+
+    .notice .wrap {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center
+    }
+
+    .notice b {
+      background: #fff;
+      color: var(--red);
+      padding: 2px 12px;
+      border-radius: 20px;
+      font: 700 .75rem var(--head);
+      text-transform: uppercase;
+      letter-spacing: .12em
+    }
+
+    /* ---------- tribute ---------- */
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center
+    }
+
+    .split>*,
+    .hero .wrap>*,
+    .sched>*,
+    .join-grid>*,
+    .two-up>*,
+    .duo>* {
+      min-width: 0
+    }
+
+    .split p {
+      margin: 0 0 16px
+    }
+
+    .split .btns {
+      margin-top: 26px
+    }
+
+    .arch {
+      border-radius: 999px 999px 0 0;
+      overflow: hidden;
+      background: var(--blush2)
+    }
+
+    .arch img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .tribute-art {
+      position: relative;
+      max-width: 440px;
+      justify-self: center;
+      width: 100%
+    }
+
+    .tribute-art .arch {
+      aspect-ratio: 4/5.2;
+      border: 3px solid var(--gold);
+      outline: 10px solid #fff;
+      outline-offset: -14px;
+      box-shadow: 0 30px 60px rgba(31, 36, 46, .18)
+    }
+
+    .tribute-art .arch img {
+      object-position: center 20%
+    }
+
+    .tribute-art .mandala {
+      width: 560px;
+      left: 50%;
+      top: 50%;
+      margin: -280px 0 0 -280px;
+      color: var(--gold);
+      opacity: .18;
+      z-index: -1
+    }
+
+    .tribute-art .tag-mem {
+      position: absolute;
+      left: 50%;
+      bottom: -22px;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      background: var(--ink);
+      color: var(--gold-l);
+      padding: 10px 22px;
+      border-radius: 30px;
+      font: italic 600 1.1rem var(--serif)
+    }
+
+    .tribute {
+      position: relative;
+      isolation: isolate
+    }
+
+    .tribute h2 em {
+      font-style: normal;
+      color: var(--red)
+    }
+
+    .kalas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 28px 0 6px
+    }
+
+    .kala {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px 16px;
+      text-align: center
+    }
+
+    .kala b {
+      display: block;
+      font: 700 1.9rem var(--head);
+      color: var(--red);
+      line-height: 1.1
+    }
+
+    .kala b sub {
+      font-size: .9rem;
+      color: var(--text);
+      vertical-align: baseline
+    }
+
+    .kala span {
+      display: block;
+      font-size: .86rem;
+      margin-top: 4px;
+      color: var(--ink);
+      font-weight: 600
+    }
+
+    .quote {
+      margin: 26px 0;
+      padding: 22px 26px;
+      background: var(--blush2);
+      border-left: 4px solid var(--red);
+      border-radius: 0 16px 16px 0;
+      font: italic 600 1.35rem/1.45 var(--serif);
+      color: var(--ink)
+    }
+
+    .quote small {
+      display: block;
+      margin-top: 8px;
+      font: 600 .78rem var(--head);
+      font-style: normal;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--red)
+    }
+
+    /* journey */
+    .journey {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 56px;
+      position: relative
+    }
+
+    .journey::before {
+      content: "";
+      position: absolute;
+      top: 44px;
+      left: 16%;
+      right: 16%;
+      border-top: 2px dashed var(--gold);
+      z-index: 0
+    }
+
+    .step {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 0 10px
+    }
+
+    .step .n {
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #fff;
+      border: 2px solid var(--gold);
+      color: var(--red);
+      box-shadow: 0 0 0 8px var(--blush)
+    }
+
+    .step .n svg {
+      width: 38px;
+      height: 38px
+    }
+
+    .step h3 {
+      font-size: 1.3rem;
+      margin-bottom: 8px
+    }
+
+    .step p {
+      margin: 0;
+      font-size: .97rem
+    }
+
+    .step .te {
+      display: block;
+      font-family: var(--tel);
+      color: var(--red);
+      font-size: .92rem;
+      margin-bottom: 4px
+    }
+
+    /* features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 26px;
+      margin-top: 54px
+    }
+
+    .feature {
+      text-align: center;
+      padding: 36px 24px;
+      background: #fff;
+      border-radius: 20px;
+      transition: transform .3s, box-shadow .3s
+    }
+
+    .feature:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 50px rgba(209, 32, 47, .12)
+    }
+
+    .feature .ico {
+      width: 78px;
+      height: 78px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--blush2);
+      color: var(--red);
+      border: 1px dashed var(--red)
+    }
+
+    .feature .ico svg {
+      width: 36px;
+      height: 36px
+    }
+
+    .feature h3 {
+      font-size: 1.25rem;
+      margin-bottom: 8px
+    }
+
+    .feature p {
+      margin: 0;
+      font-size: .96rem
+    }
+
+    /* ---------- instruments (dark) ---------- */
+    .dark {
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(ellipse at top, #2a1c15 0%, var(--night) 60%);
+      color: #cbbfb5
+    }
+
+    .dark h2 {
+      color: #fff
+    }
+
+    .dark .eyebrow {
+      color: var(--gold)
+    }
+
+    .dark .mandala {
+      color: var(--gold);
+      opacity: .07;
+      width: 700px;
+      right: -220px;
+      top: -200px
+    }
+
+    .dark .wrap {
+      position: relative
+    }
+
+    .instruments {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      margin-top: 54px
+    }
+
+    .inst {
+      margin: 0;
+      position: relative;
+      border-radius: 22px;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      background: #2a1f19;
+      border: 1px solid rgba(201, 160, 74, .25)
+    }
+
+    .inst img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .7s
+    }
+
+    .inst:hover img {
+      transform: scale(1.07)
+    }
+
+    .inst figcaption {
+      position: absolute;
+      inset: auto 0 0 0;
+      padding: 60px 20px 20px;
+      background: linear-gradient(transparent, rgba(22, 17, 14, .95) 55%);
+      text-align: left
+    }
+
+    .inst .te {
+      display: block;
+      font-family: var(--tel);
+      color: var(--gold-l);
+      font-size: .95rem
+    }
+
+    .inst b {
+      display: block;
+      font: 600 1.3rem var(--head);
+      color: #fff
+    }
+
+    .inst p {
+      margin: 4px 0 0;
+      font-size: .86rem;
+      line-height: 1.5;
+      color: #d6cbc2
+    }
+
+    .inst.voice {
+      background: linear-gradient(160deg, var(--red) 0%, #7d0d17 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 26px
+    }
+
+    .inst.voice svg {
+      width: 70px;
+      height: 70px;
+      color: #fff;
+      margin-bottom: 14px
+    }
+
+    .inst.voice b {
+      font-size: 1.5rem
+    }
+
+    .inst.voice p {
+      color: #ffdfe2;
+      font-size: .95rem
+    }
+
+    .inst.voice .te {
+      color: #fff
+    }
+
+    /* ---------- Godavari parallax band ---------- */
+    .river {
+      position: relative;
+      padding: 140px 0;
+      background: var(--night) url(images/godavari-river.jpg) center/cover fixed;
+      color: #fff;
+      text-align: center;
+      overflow: hidden
+    }
+
+    .river::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(22, 17, 14, .55), rgba(22, 17, 14, .75))
+    }
+
+    .river .wrap {
+      position: relative
+    }
+
+    .river .te {
+      font-family: var(--tel);
+      font-size: clamp(1.6rem, 3.6vw, 2.6rem);
+      color: var(--gold-l);
+      margin: 0
+    }
+
+    .river h2 {
+      color: #fff;
+      font: italic 600 clamp(1.8rem, 4vw, 3rem) var(--serif);
+      margin-top: 12px
+    }
+
+    .river p {
+      max-width: 58ch;
+      margin: 18px auto 0;
+      color: #eadfd6
+    }
+
+    .river .cap {
+      position: absolute;
+      right: 16px;
+      bottom: 12px;
+      font-size: .75rem;
+      color: rgba(255, 255, 255, .6);
+      z-index: 1
+    }
+
+    .waves {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: 60px;
+      color: #fff;
+      z-index: 1
+    }
+
+    /* legends */
+    .legends {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 26px 22px;
+      margin-top: 54px
+    }
+
+    .legend {
+      margin: 0;
+      text-align: center
+    }
+
+    .legend .arch {
+      aspect-ratio: 3/4;
+      border: 6px solid #fff;
+      box-shadow: 0 14px 34px rgba(31, 36, 46, .1)
+    }
+
+    .legend .arch img {
+      object-position: center 22%;
+      filter: grayscale(.35) sepia(.15);
+      transition: filter .4s, transform .6s
+    }
+
+    .legend:hover .arch img {
+      filter: none;
+      transform: scale(1.06)
+    }
+
+    .legend figcaption {
+      padding-top: 14px
+    }
+
+    .legend b {
+      display: block;
+      font: 600 1.06rem var(--head);
+      color: var(--ink)
+    }
+
+    .legend span {
+      display: block;
+      font-size: .85rem
+    }
+
+    .legend .yr {
+      color: var(--red);
+      font-weight: 700
+    }
+
+    .credit-note {
+      margin-top: 34px;
+      font-size: .85rem;
+      text-align: center
+    }
+
+    .credit-note a {
+      color: var(--red)
+    }
+
+    /* schedule */
+    .sched {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 60px;
+      align-items: center
+    }
+
+    .tbl {
+      overflow-x: auto;
+      border-radius: 18px;
+      box-shadow: 0 20px 50px rgba(31, 36, 46, .08)
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 540px;
+      background: #fff
+    }
+
+    th,
+    td {
+      padding: 16px 20px;
+      text-align: left;
+      border-bottom: 1px solid var(--line)
+    }
+
+    th {
+      background: var(--ink);
+      color: #fff;
+      font: 600 .8rem var(--head);
+      letter-spacing: .12em;
+      text-transform: uppercase
+    }
+
+    tbody tr:hover {
+      background: var(--blush)
+    }
+
+    td:first-child {
+      color: var(--ink);
+      font-weight: 700
+    }
+
+    .weekly {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      padding: 4px 16px;
+      border-radius: 20px;
+      font: 600 .75rem var(--head);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin-bottom: 14px
+    }
+
+    /* service cards */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 54px;
+      text-align: left
+    }
+
+    .service {
+      background: #fff;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 16px 40px rgba(31, 36, 46, .07);
+      transition: transform .3s
+    }
+
+    .service:hover {
+      transform: translateY(-6px)
+    }
+
+    .service .img {
+      aspect-ratio: 4/3;
+      background: var(--blush);
+      overflow: hidden
+    }
+
+    .service .img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .6s
+    }
+
+    .service:hover .img img {
+      transform: scale(1.06)
+    }
+
+    .service .body {
+      padding: 26px 28px 30px;
+      position: relative
+    }
+
+    .service .num {
+      position: absolute;
+      right: 24px;
+      top: -28px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--red);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font: 700 1.1rem var(--head);
+      border: 4px solid #fff
+    }
+
+    .service .te {
+      font-family: var(--tel);
+      color: var(--red);
+      font-size: .95rem;
+      margin: 0 0 4px
+    }
+
+    .service h3 {
+      font-size: 1.35rem;
+      margin-bottom: 8px
+    }
+
+    .service p {
+      margin: 0;
+      font-size: .97rem
+    }
+
+    /* event cards */
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 50px
+    }
+
+    .post {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: border-color .3s, box-shadow .3s
+    }
+
+    .post:hover {
+      border-color: var(--red);
+      box-shadow: 0 20px 44px rgba(209, 32, 47, .1)
+    }
+
+    .post .meta {
+      display: flex;
+      align-items: center;
+      gap: 14px
+    }
+
+    .post .date {
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      background: var(--red);
+      color: #fff;
+      display: grid;
+      place-content: center;
+      text-align: center;
+      line-height: 1
+    }
+
+    .post .date b {
+      font: 700 1.5rem var(--head)
+    }
+
+    .post .date span {
+      font-size: .72rem;
+      text-transform: uppercase;
+      letter-spacing: .1em
+    }
+
+    .post h3 {
+      font-size: 1.25rem
+    }
+
+    .post p {
+      margin: 0;
+      font-size: .95rem
+    }
+
+    .post .more {
+      margin-top: auto;
+      font: 600 .8rem var(--head);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--red);
+      text-decoration: none
+    }
+
+    .tag {
+      font: 600 .7rem var(--head);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      background: var(--blush2);
+      padding: 4px 12px;
+      border-radius: 20px;
+      color: var(--red);
+      white-space: nowrap
+    }
+
+    .sample {
+      font-size: .85rem;
+      margin-top: 18px;
+      font-style: italic
+    }
+
+    /* programme list */
+    .filters {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 0 0 28px
+    }
+
+    .chip {
+      padding: 9px 22px;
+      border: 1.5px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      border-radius: 30px;
+      cursor: pointer;
+      font: 600 .8rem var(--head);
+      letter-spacing: .1em;
+      text-transform: uppercase
+    }
+
+    .chip[aria-pressed=true] {
+      background: var(--red);
+      border-color: var(--red);
+      color: #fff
+    }
+
+    .events {
+      display: grid;
+      gap: 16px
+    }
+
+    .event {
+      display: grid;
+      grid-template-columns: 84px 1fr auto;
+      gap: 22px;
+      align-items: center;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px 24px;
+      transition: border-color .25s
+    }
+
+    .event:hover {
+      border-color: var(--red)
+    }
+
+    .event .date {
+      text-align: center;
+      border-right: 2px solid var(--line);
+      padding-right: 18px
+    }
+
+    .event .date b {
+      display: block;
+      font: 700 2.2rem var(--head);
+      color: var(--red);
+      line-height: 1
+    }
+
+    .event .date span {
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: .1em
+    }
+
+    .event h3 {
+      font-size: 1.2rem
+    }
+
+    .event p {
+      margin: 2px 0 0;
+      font-size: .95rem
+    }
+
+    /* CTA band */
+    .cta-band {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(90deg, rgba(168, 20, 31, .94), rgba(209, 32, 47, .82)), url(images/godavari-arch-bridge.jpg) center 60%/cover;
+      color: #fff;
+      padding: 90px 0
+    }
+
+    .cta-band .wrap {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap
+    }
+
+    .cta-band h2 {
+      color: #fff;
+      max-width: 22ch
+    }
+
+    .cta-band p {
+      margin: 12px 0 0;
+      color: #ffe1e4;
+      max-width: 56ch
+    }
+
+    .cta-band .mandala {
+      color: #fff;
+      opacity: .1;
+      width: 460px;
+      left: -120px;
+      top: -160px
+    }
+
+    /* page title banners (photo) */
+    .pagehead {
+      position: relative;
+      overflow: hidden;
+      background: var(--night) center/cover;
+      text-align: center;
+      padding: 120px 0 100px;
+      color: #fff
+    }
+
+    .pagehead::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(22, 17, 14, .55), rgba(22, 17, 14, .82))
+    }
+
+    .pagehead .wrap {
+      position: relative
+    }
+
+    .pagehead h1 {
+      color: #fff;
+      font-size: clamp(2.4rem, 5vw, 3.8rem)
+    }
+
+    .pagehead .te {
+      font-family: var(--tel);
+      color: var(--gold-l);
+      font-size: 1.15rem;
+      margin: 0 0 8px
+    }
+
+    .crumbs {
+      margin-top: 16px;
+      font: 600 .8rem var(--head);
+      letter-spacing: .14em;
+      text-transform: uppercase
+    }
+
+    .crumbs a {
+      text-decoration: none;
+      color: #fff
+    }
+
+    .crumbs a:hover {
+      color: var(--gold-l)
+    }
+
+    .crumbs span {
+      color: var(--gold-l)
+    }
+
+    .pagehead .lede {
+      margin: 20px auto 0;
+      color: #eadfd6
+    }
+
+    /* cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 46px;
+      text-align: left
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 32px 28px
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 8px
+    }
+
+    .card p {
+      margin: 0;
+      font-size: .97rem
+    }
+
+    .card .ico {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--blush2);
+      color: var(--red);
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+      font: 700 1.2rem var(--head)
+    }
+
+    .founders {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 46px
+    }
+
+    .founder {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 24px;
+      align-items: center;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 28px
+    }
+
+    .avatar {
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: var(--red);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-family: var(--tel);
+      font-size: 2.6rem;
+      border: 6px solid var(--blush2)
+    }
+
+    .founder h3 {
+      font-size: 1.4rem
+    }
+
+    .founder .role {
+      color: var(--red);
+      font: 600 .78rem var(--head);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin: 6px 0 8px
+    }
+
+    .founder p {
+      margin: 0;
+      font-size: .95rem
+    }
+
+    .team5 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 22px;
+      margin-top: 50px
+    }
+
+    .member {
+      margin: 0;
+      text-align: center
+    }
+
+    .member .photo {
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: #fff;
+      border: 6px solid #fff;
+      box-shadow: 0 14px 30px rgba(31, 36, 46, .08);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      margin: 0 auto 14px;
+      max-width: 170px
+    }
+
+    .member b {
+      display: block;
+      font: 600 1.05rem var(--head);
+      color: var(--ink)
+    }
+
+    .member .te {
+      display: block;
+      font-family: var(--tel);
+      color: var(--red);
+      font-size: .9rem
+    }
+
+    .member span:last-child {
+      display: block;
+      font-size: .9rem
+    }
+
+    .list {
+      margin: 0;
+      padding: 0;
+      list-style: none
+    }
+
+    .list li {
+      padding: 8px 0 8px 30px;
+      position: relative;
+      border-bottom: 1px dashed var(--line)
+    }
+
+    .list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 15px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 3px solid var(--red)
+    }
+
+    .composer {
+      margin-top: 40px;
+      padding: 28px 32px;
+      background: #fff;
+      border-radius: 20px;
+      border: 1px dashed var(--red)
+    }
+
+    .composer h3 {
+      font-size: 1.4rem
+    }
+
+    .composer select,
+    .ctl select,
+    .ctl input[type=range] {
+      font: inherit;
+      padding: 8px 12px;
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      margin-left: 8px
+    }
+
+    .ctl input[type=range] {
+      padding: 0;
+      accent-color: var(--red);
+      margin: 0
+    }
+
+    /* gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px
+    }
+
+    .tile {
+      margin: 0;
+      aspect-ratio: 3/4;
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      display: flex;
+      align-items: flex-end;
+      color: #fff;
+      background: var(--ink)
+    }
+
+    .tile[hidden] {
+      display: none
+    }
+
+    .tile img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .6s
+    }
+
+    .tile:hover img {
+      transform: scale(1.06)
+    }
+
+    .tile figcaption {
+      position: relative;
+      width: 100%;
+      padding: 40px 16px 14px;
+      background: linear-gradient(transparent, rgba(12, 12, 13, .85));
+      font: 600 1.02rem var(--head)
+    }
+
+    .tile figcaption span {
+      display: block;
+      font: 400 .8rem var(--body);
+      opacity: .85
+    }
+
+    .slot {
+      margin-top: 28px;
+      padding: 24px;
+      border: 2px dashed var(--red);
+      border-radius: 18px;
+      background: #fff;
+      text-align: center
+    }
+
+    details.credits {
+      margin-top: 30px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px 22px;
+      font-size: .88rem
+    }
+
+    details.credits summary {
+      cursor: pointer;
+      font: 600 .85rem var(--head);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink)
+    }
+
+    details.credits ul {
+      margin: 12px 0 0;
+      padding-left: 18px
+    }
+
+    details.credits a {
+      color: var(--red)
+    }
+
+    .two-up {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+      margin-top: 46px
+    }
+
+    .ctl {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 18px
+    }
+
+    .beats {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 18px
+    }
+
+    .vib {
+      display: flex;
+      gap: 5px;
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 12px
+    }
+
+    .beat {
+      min-width: 54px;
+      height: 62px;
+      padding: 0 5px;
+      border-radius: 10px;
+      background: var(--blush2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font: 700 1.1rem var(--head);
+      color: var(--ink);
+      transition: background .08s
+    }
+
+    .beat small {
+      font: 500 .7rem var(--body);
+      color: var(--text)
+    }
+
+    .beat.on {
+      background: var(--red);
+      color: #fff
+    }
+
+    .beat.on small {
+      color: #fff
+    }
+
+    /* join */
+    .join-grid {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 40px;
+      margin-top: 46px
+    }
+
+    form {
+      background: #fff;
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      border-radius: 22px;
+      box-shadow: 0 24px 60px rgba(31, 36, 46, .08)
+    }
+
+    form .full {
+      grid-column: 1/-1
+    }
+
+    label.f {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font: 600 .88rem var(--head);
+      color: var(--ink)
+    }
+
+    input,
+    select,
+    textarea {
+      font: 400 1rem var(--body);
+      padding: 12px 16px;
+      border: 1.5px solid var(--line);
+      background: var(--blush);
+      color: var(--ink);
+      border-radius: 12px;
+      width: 100%
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--red);
+      outline: none;
+      background: #fff
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical
+    }
+
+    .err {
+      color: #b3121f;
+      font: 500 .82rem var(--body);
+      min-height: 1em
+    }
+
+    .result {
+      grid-column: 1/-1;
+      background: var(--blush2);
+      border-radius: 14px;
+      padding: 18px;
+      display: none
+    }
+
+    .result pre {
+      white-space: pre-wrap;
+      font: 400 .95rem var(--body);
+      margin: 8px 0 12px
+    }
+
+    .contact {
+      background: var(--ink);
+      color: #c9cbd0;
+      border-radius: 22px;
+      padding: 30px
+    }
+
+    .contact h3 {
+      color: #fff;
+      font-size: 1.4rem;
+      margin-bottom: 10px
+    }
+
+    .contact .item {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .1)
+    }
+
+    .contact .item:last-child {
+      border: 0
+    }
+
+    .contact b {
+      display: block;
+      color: var(--gold-l);
+      font: 600 .78rem var(--head);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin-bottom: 2px
+    }
+
+    /* footer */
+    footer {
+      background: linear-gradient(180deg, rgba(12, 12, 13, .94), rgba(12, 12, 13, .98)), url(images/godavari-sunset.jpg) center/cover;
+      color: #a9abb0;
+      padding: 80px 0 0
+    }
+
+    .foot-mem {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      padding-bottom: 40px;
+      margin-bottom: 50px;
+      border-bottom: 1px solid rgba(201, 160, 74, .25)
+    }
+
+    .foot-mem img {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 20%;
+      border: 3px solid var(--gold)
+    }
+
+    .foot-mem p {
+      margin: 0;
+      font: italic 600 1.35rem var(--serif);
+      color: var(--gold-l)
+    }
+
+    .foot-mem span {
+      display: block;
+      font: 400 .92rem var(--body);
+      color: #a9abb0;
+      font-style: normal
+    }
+
+    .foot {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1.2fr 1.1fr;
+      gap: 40px
+    }
+
+    .foot .logo {
+      background: #fff;
+      border-radius: 16px;
+      padding: 10px 16px;
+      display: inline-block;
+      margin-bottom: 18px
+    }
+
+    .foot .logo img {
+      height: 60px;
+      width: auto
+    }
+
+    footer h6 {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 12px
+    }
+
+    footer h6::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 34px;
+      height: 2px;
+      background: var(--red)
+    }
+
+    footer p {
+      margin: 0 0 8px;
+      font-size: .95rem
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0
+    }
+
+    footer li {
+      margin-bottom: 8px
+    }
+
+    footer a {
+      color: #d9dade;
+      text-decoration: none;
+      transition: color .2s
+    }
+
+    footer a:hover {
+      color: var(--gold-l)
+    }
+
+    footer .te {
+      font-family: var(--tel);
+      color: #fff
+    }
+
+    .copy {
+      margin-top: 60px;
+      padding: 22px 0;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      font-size: .85rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap
+    }
+
+    /* reveal */
+    .rv {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .8s ease, transform .8s ease
+    }
+
+    .rv.in {
+      opacity: 1;
+      transform: none
+    }
+
+    @media (max-width:1020px) {
+      .legends {
+        grid-template-columns: repeat(3, 1fr)
+      }
+
+      .features,
+      .instruments {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .instruments {
+        grid-template-columns: repeat(3, 1fr)
+      }
+
+      .foot {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .team5 {
+        grid-template-columns: repeat(3, 1fr)
+      }
+
+      .founders {
+        grid-template-columns: 1fr
+      }
+    }
+
+    @media (max-width:880px) {
+      .burger {
+        display: block
+      }
+
+      .nav {
+        flex-wrap: wrap
+      }
+
+      .nav>.btn {
+        display: none
+      }
+
+      nav.main {
+        display: none;
+        width: 100%
+      }
+
+      nav.main.open {
+        display: block
+      }
+
+      nav.main ul {
+        flex-direction: column;
+        padding: 8px 0 14px
+      }
+
+      nav.main a::after {
+        display: none
+      }
+
+      .burger[aria-expanded=true] span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg)
+      }
+
+      .burger[aria-expanded=true] span:nth-child(2) {
+        opacity: 0
+      }
+
+      .burger[aria-expanded=true] span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg)
+      }
+
+      .split,
+      .sched,
+      .two-up,
+      .join-grid {
+        grid-template-columns: 1fr
+      }
+
+      .services,
+      .posts,
+      .cards,
+      .journey {
+        grid-template-columns: 1fr
+      }
+
+      .journey::before {
+        display: none
+      }
+
+      .instruments {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .gallery {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .event {
+        grid-template-columns: 70px 1fr
+      }
+
+      .event .tag {
+        grid-column: 2;
+        justify-self: start
+      }
+
+      form {
+        grid-template-columns: 1fr;
+        padding: 24px
+      }
+
+      section {
+        padding: 70px 0
+      }
+
+      .river {
+        padding: 100px 0;
+        background-attachment: scroll
+      }
+
+      .topbar .hide-sm {
+        display: none
+      }
+
+      .tribute-art {
+        max-width: 340px
+      }
+    }
+
+    @media (max-width:560px) {
+      .wrap {
+        padding: 0 16px
+      }
+
+      .legends {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 14px
+      }
+
+      .features,
+      .foot {
+        grid-template-columns: 1fr
+      }
+
+      .kalas {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px
+      }
+
+      .kala {
+        padding: 14px 8px
+      }
+
+      .kala b {
+        font-size: 1.4rem
+      }
+
+      .team5 {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .brand img {
+        height: 52px
+      }
+
+      .instruments {
+        gap: 12px
+      }
+
+      .inst p {
+        display: none
+      }
+
+      .founder {
+        grid-template-columns: 1fr;
+        text-align: center
+      }
+
+      .founder .avatar {
+        width: 110px;
+        margin: 0 auto
+      }
+
+      .foot-mem {
+        flex-direction: column;
+        text-align: center
+      }
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto
+      }
+
+      .mandala {
+        animation: none
+      }
+
+      .rv {
+        opacity: 1;
+        transform: none;
+        transition: none
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="mandala" viewBox="0 0 200 200">
+      <g fill="none" stroke="currentColor" stroke-width="1">
+        <circle cx="100" cy="100" r="96" />
+        <circle cx="100" cy="100" r="80" />
+        <circle cx="100" cy="100" r="40" />
+        <circle cx="100" cy="100" r="18" />
+        <g id="petals">
+          <path d="M100 4 C112 30 112 50 100 60 C88 50 88 30 100 4Z" />
+          <path d="M100 20 C106 34 106 46 100 60 C94 46 94 34 100 20Z" />
+          <circle cx="100" cy="70" r="4" />
+        </g>
+        <use href="#petals" transform="rotate(30 100 100)" />
+        <use href="#petals" transform="rotate(60 100 100)" />
+        <use href="#petals" transform="rotate(90 100 100)" />
+        <use href="#petals" transform="rotate(120 100 100)" />
+        <use href="#petals" transform="rotate(150 100 100)" />
+        <use href="#petals" transform="rotate(180 100 100)" />
+        <use href="#petals" transform="rotate(210 100 100)" />
+        <use href="#petals" transform="rotate(240 100 100)" />
+        <use href="#petals" transform="rotate(270 100 100)" />
+        <use href="#petals" transform="rotate(300 100 100)" />
+        <use href="#petals" transform="rotate(330 100 100)" />
+      </g>
+    </symbol>
+    <symbol id="divider" viewBox="0 0 140 18">
+      <path d="M0 9h52M88 9h52" stroke="currentColor" stroke-width="1" />
+      <path d="M70 1c4 4 4 12 0 16-4-4-4-12 0-16zM60 9c4-3 8-3 10 0-2 3-6 3-10 0zM80 9c-4-3-8-3-10 0 2 3 6 3 10 0z"
+        fill="currentColor" />
+    </symbol>
+  </svg>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span class="mem"><i>🪔</i> In loving memory of Dr. Talari Satish garu<span class="hide-sm"> · Rajahmundry, Andhra
+          Pradesh</span></span>
+      <div class="social">
+        <a href="#" aria-label="Facebook (add link)"><svg viewBox="0 0 24 24">
+            <path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H7v4h2v9h4v-9h3l1-4h-4V9c0-.6.4-1 1-1z" />
+          </svg></a>
+        <a href="#" aria-label="Instagram (add link)"><svg viewBox="0 0 24 24">
+            <path
+              d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm5.2-9.4a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4zM12 2c-2.7 0-3 0-4.1.1C4.3 2.3 2.3 4.3 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.2 3.6 2.2 5.6 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.6-.2 5.6-2.2 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.2-3.6-2.2-5.6-5.8-5.8C15 2 14.7 2 12 2zm0 1.8c2.7 0 3 0 4 .1 2.6.1 3.9 1.4 4 4 .1 1 .1 1.3.1 4s0 3-.1 4c-.1 2.6-1.4 3.9-4 4-1 .1-1.3.1-4 .1s-3 0-4-.1c-2.6-.1-3.9-1.4-4-4-.1-1-.1-1.3-.1-4s0-3 .1-4c.1-2.6 1.4-3.9 4-4 1-.1 1.3-.1 4-.1z" />
+          </svg></a>
+        <a href="#" aria-label="YouTube (add link)"><svg viewBox="0 0 24 24">
+            <path
+              d="M23 7.2a3 3 0 00-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 001 7.2 31 31 0 00.5 12 31 31 0 001 16.8a3 3 0 002.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 002.1-2.1 31 31 0 00.5-4.8 31 31 0 00-.5-4.8zM9.7 15V9l5.8 3-5.8 3z" />
+          </svg></a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site">
+    <div class="nav">
+      <a class="brand" href="#home" aria-label="Swara Raga Sudha home"><img src="logo.png"
+          alt="Swara Raga Sudha DTS logo"></a>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false"
+        aria-controls="mainnav"><span></span><span></span><span></span></button>
+      <nav class="main" id="mainnav" aria-label="Main">
+        <ul>
+          <li><a href="#home" data-nav="home">Home</a></li>
+          <li><a href="#about" data-nav="about">His Legacy</a></li>
+          <li><a href="#programmes" data-nav="programmes">Programmes</a></li>
+          <li><a href="#gallery" data-nav="gallery">Gallery</a></li>
+          <li><a href="#join" data-nav="join">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn primary" href="#join">Join now</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HOME ============ -->
+    <div class="view" id="v-home">
+      <div class="hero">
+        <h1 class="sr-only">Swara Raga Sudha (స్వర రాగ సుధ) · In loving memory of Dr. Talari Satish garu</h1>
+        <video class="hero-video" id="heroVideo" src="DTS_Swara_Raga_Sudha_Banner.mp4" autoplay muted loop playsinline
+          preload="auto" aria-label="Swara Raga Sudha banner"></video>
+      </div>
+      <div class="notice">
+        <div class="wrap"><b>New</b><span>We have just begun. Founding memberships are open now.</span></div>
+      </div>
+
+      <!-- Tribute -->
+      <section class="tribute">
+        <div class="wrap split">
+          <div class="tribute-art rv">
+            <svg class="mandala">
+              <use href="#mandala" />
+            </svg>
+            <div class="arch"><img src="images/dr-talari-satish.png" alt="Dr. Talari Satish"></div>
+            <span class="tag-mem">Forever in our songs</span>
+          </div>
+          <div class="rv">
+            <p class="eyebrow">Our inspiration <span class="te">మా స్ఫూర్తి</span></p>
+            <h2>The voice behind our name: <em>Dr. Talari Satish garu</em></h2>
+            <p class="lede">Dr. Talari Satish garu was a rare all-round artist. Of the 64 traditional arts (చతుష్షష్టి
+              కళలు), he had mastered 19, and singing was the one closest to his heart.</p>
+            <p>He sang on countless stages, and he gave just as much off the stage, guiding and introducing many
+              singers who might otherwise never have been heard. After his passing, his sister and brother-in-law
+              started Swara Raga Sudha in his name so that his music and his generosity live on. The letters
+              <b>DTS</b> in our name stand for him.
+            </p>
+            <div class="kalas">
+              <div class="kala"><b>19<sub>/64</sub></b><span>Arts mastered</span></div>
+              <div class="kala"><b>♪</b><span>Stage performer</span></div>
+              <div class="kala"><b>గురు</b><span>Mentor to many</span></div>
+            </div>
+            <div class="btns"><a class="btn primary" href="#about">Read his legacy</a></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Journey -->
+      <section class="blush">
+        <div class="wrap center">
+          <p class="eyebrow">How we began <span class="te">మా ప్రయాణం</span></p>
+          <h2>From one voice to many</h2>
+          <div class="divider"><svg>
+              <use href="#divider" />
+            </svg></div>
+          <div class="journey">
+            <div class="step rv">
+              <div class="n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <rect x="9" y="2" width="6" height="12" rx="3" />
+                  <path d="M5 11a7 7 0 0014 0M12 18v4M8 22h8" />
+                </svg></div>
+              <span class="te">ఆయన కళ</span>
+              <h3>His art</h3>
+              <p>A singer and artist of 19 arts who filled stages with music and devotion.</p>
+            </div>
+            <div class="step rv">
+              <div class="n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <circle cx="9" cy="8" r="3" />
+                  <circle cx="17" cy="9" r="2.5" />
+                  <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14 15c3 0 6 1.8 6 5" />
+                </svg></div>
+              <span class="te">ఆయన శిష్యులు</span>
+              <h3>His singers</h3>
+              <p>He helped many people find their voice and introduced them to the stage.</p>
+            </div>
+            <div class="step rv">
+              <div class="n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M12 2c3 4 3 7 0 10-3-3-3-6 0-10z" />
+                  <path d="M5 22h14M7 22c0-5 2-8 5-8s5 3 5 8" />
+                </svg></div>
+              <span class="te">స్వర రాగ సుధ</span>
+              <h3>His name lives on</h3>
+              <p>His sister and brother-in-law founded Swara Raga Sudha (DTS) to continue his work.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Instruments -->
+      <section class="dark">
+        <svg class="mandala">
+          <use href="#mandala" />
+        </svg>
+        <div class="wrap center">
+          <p class="eyebrow">Our tradition <span class="te">వాద్యాలు</span></p>
+          <h2>Instruments of Indian classical music</h2>
+          <p class="lede">The instruments that accompany every song we sing. Our singers learn to listen to them, keep
+            pace with them and perform alongside them.</p>
+          <div class="instruments" id="instruments"></div>
+        </div>
+      </section>
+
+      <!-- Why -->
+      <section class="blush">
+        <div class="wrap center">
+          <p class="eyebrow">Why join <span class="te">ఎందుకు?</span></p>
+          <h2>Why Swara Raga Sudha?</h2>
+          <div class="features">
+            <div class="feature rv">
+              <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M9 18V5l12-2v13" />
+                  <circle cx="6" cy="18" r="3" />
+                  <circle cx="18" cy="16" r="3" />
+                </svg></div>
+              <h3>Proper training</h3>
+              <p>Swara, sruti and laya taught step by step, from sarali varisai to keertanas.</p>
+            </div>
+            <div class="feature rv">
+              <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M12 2c3 4 3 7 0 10-3-3-3-6 0-10z" />
+                  <path d="M12 12v10M8 22h8" />
+                  <path d="M5 12c2 0 5 1 7 4 2-3 5-4 7-4" />
+                </svg></div>
+              <h3>Living tradition</h3>
+              <p>Songs of Tyagaraja, Annamayya and Ramadasu, learnt with meaning and bhava.</p>
+            </div>
+            <div class="feature rv">
+              <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <rect x="9" y="2" width="6" height="12" rx="3" />
+                  <path d="M5 11a7 7 0 0014 0M12 18v4M8 22h8" />
+                </svg></div>
+              <h3>A stage for you</h3>
+              <p>Just as Satish garu did, we introduce new singers to real audiences.</p>
+            </div>
+            <div class="feature rv">
+              <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <circle cx="9" cy="8" r="3" />
+                  <circle cx="17" cy="9" r="2.5" />
+                  <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14 15c3 0 6 1.8 6 5" />
+                </svg></div>
+              <h3>Warm community</h3>
+              <p>A friendly circle of singers, accompanists and listeners who learn from each other.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Godavari band -->
+      <div class="river">
+        <div class="wrap">
+          <p class="te">గోదావరి తీరాన సంగీత ప్రవాహం</p>
+          <h2>Music flowing on the banks of the Godavari</h2>
+          <p>Rajahmundry, the cultural capital of Andhra Pradesh, has always been a home for poets, artists and
+            singers. Swara Raga Sudha adds new voices to that river of music.</p>
+        </div>
+        <span class="cap">Godavari river at Rajahmundry</span>
+      </div>
+
+      <!-- Legends -->
+      <section>
+        <div class="wrap center">
+          <p class="eyebrow">Inspiration <span class="te">స్ఫూర్తి</span></p>
+          <h2>Voices that inspire us</h2>
+          <p class="lede">The great singers whose music we study, sing and celebrate.</p>
+          <div class="legends" id="legends"></div>
+          <p class="credit-note">Photographs from Wikimedia Commons under free licences. <a href="#gallery">See photo
+              credits</a>.</p>
+        </div>
+      </section>
+
+      <!-- Schedule -->
+      <section class="pink">
+        <div class="wrap sched">
+          <div class="rv">
+            <span class="weekly">Weekly</span>
+            <h2>Classroom schedule</h2>
+            <p class="lede">Four batches each week. Join the one that suits your level. Not sure which? Talk to us.</p>
+            <div class="btns" style="margin-top:26px"><a class="btn primary" href="#join">Contact us</a></div>
+          </div>
+          <div class="rv">
+            <div class="tbl">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Batch</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Focus</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Beginners</td>
+                    <td>Saturday</td>
+                    <td>5:00–6:30 pm</td>
+                    <td>Swara practice, simple songs</td>
+                  </tr>
+                  <tr>
+                    <td>Intermediate</td>
+                    <td>Sunday</td>
+                    <td>9:00–11:00 am</td>
+                    <td>Geethams, varnams, keertanas</td>
+                  </tr>
+                  <tr>
+                    <td>Advanced</td>
+                    <td>Wednesday</td>
+                    <td>6:30–8:30 pm</td>
+                    <td>Improvisation, concert prep</td>
+                  </tr>
+                  <tr>
+                    <td>Group singing</td>
+                    <td>Friday</td>
+                    <td>7:00–8:30 pm</td>
+                    <td>Annamayya &amp; Ramadasu</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="sample">Sample timings. Confirm them with the committee before publishing.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- What we offer -->
+      <section>
+        <div class="wrap center">
+          <p class="eyebrow">Our services <span class="te">మేము చేసేది</span></p>
+          <h2>What we offer</h2>
+          <p class="lede">Learn the art of singing through classes that blend traditional foundations with the joy of
+            performing.</p>
+          <div class="services">
+            <article class="service rv">
+              <div class="img"><img src="images/tambura.jpg" alt="A pair of tamburas"
+                  style="object-position:center 30%"></div>
+              <div class="body"><span class="num">01</span>
+                <p class="te">శిక్షణ</p>
+                <h3>Classroom training</h3>
+                <p>Weekly batches for beginners and trained singers, from basic exercises to keertanas and light music.
+                </p>
+              </div>
+            </article>
+            <article class="service rv">
+              <div class="img"><img src="images/veena.jpg" alt="Painting of a woman playing the veena"
+                  style="object-position:center 35%"></div>
+              <div class="body"><span class="num">02</span>
+                <p class="te">వ్యక్తిగత శిక్షణ</p>
+                <h3>Individual guidance</h3>
+                <p>One-to-one sessions on voice, sruti alignment and repertoire for singers preparing for the stage.</p>
+              </div>
+            </article>
+            <article class="service rv">
+              <div class="img"><img src="images/concert.jpg" alt="Musicians performing on stage beside a brass lamp">
+              </div>
+              <div class="body"><span class="num">03</span>
+                <p class="te">ప్రదర్శనలు</p>
+                <h3>Stage performance</h3>
+                <p>Concerts and group programmes that give local singers a proper stage and an audience.</p>
+              </div>
+            </article>
+          </div>
+          <div class="btns" style="justify-content:center;margin-top:44px"><a class="btn primary" href="#programmes">Our
+              programmes</a></div>
+        </div>
+      </section>
+
+      <!-- Coming up -->
+      <section class="blush">
+        <div class="wrap">
+          <div class="center">
+            <p class="eyebrow">Events <span class="te">రాబోయే కార్యక్రమాలు</span></p>
+            <h2>Coming up</h2>
+          </div>
+          <div class="posts" id="home-events"></div>
+          <p class="sample center">Sample listings. Real dates will replace these.</p>
+        </div>
+      </section>
+
+      <div class="cta-band">
+        <svg class="mandala">
+          <use href="#mandala" />
+        </svg>
+        <div class="wrap">
+          <div>
+            <h2>Carry his music forward with us</h2>
+            <p>Founding members help shape the classes, the programmes and the committee. Fill in the short form and we
+              will contact you.</p>
+          </div>
+          <a class="btn light" href="#join">Apply for membership</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT / LEGACY ============ -->
+    <div class="view" id="v-about" hidden>
+      <div class="pagehead" style="background-image:url(images/godavari-sunset.jpg)">
+        <div class="wrap">
+          <p class="te">ఆయన వారసత్వం</p>
+          <h1>His legacy, our mission</h1>
+          <p class="crumbs"><a href="#home">Home</a> / <span>His Legacy</span></p>
+        </div>
+      </div>
+
+      <section class="tribute">
+        <div class="wrap split">
+          <div class="tribute-art rv">
+            <svg class="mandala">
+              <use href="#mandala" />
+            </svg>
+            <div class="arch"><img src="images/dr-talari-satish.png" alt="Dr. Talari Satish"></div>
+            <span class="tag-mem">Dr. Talari Satish garu</span>
+          </div>
+          <div class="rv">
+            <p class="eyebrow">In loving memory <span class="te">స్మృతిలో</span></p>
+            <h2>Dr. Talari Satish garu</h2>
+            <p class="lede">Indian tradition speaks of 64 arts (చతుష్షష్టి కళలు), covering music, poetry, painting,
+              drama and many more. Very few people master even one. Dr. Talari Satish garu mastered 19 of them.</p>
+            <p>Singing was his first love. He gave a great many stage performances, and he was known just as much for
+              his generosity: he helped many people learn to sing and introduced them to the stage.</p>
+            <p>When he passed away, his sister and brother-in-law decided that his work should not stop. Swara Raga
+              Sudha (DTS) is their tribute: an organisation in his name that does what he always did, which is to
+              bring out the singer in everyone.</p>
+            <div class="quote">“His voice is silent now, but every singer we train carries a part of it.”<small>Swara
+                Raga Sudha</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pink">
+        <div class="wrap split">
+          <div class="rv">
+            <p class="eyebrow">19 of 64 <span class="te">కళలు</span></p>
+            <h2>The arts he mastered</h2>
+            <p class="lede">Singing was at the centre, but his talent reached far beyond it.</p>
+            <p class="sample">Add the list of the 19 arts here (for example: vocal music, instrumental music, drama,
+              poetry…).</p>
+          </div>
+          <ul class="list rv">
+            <li>Vocal music (గాత్రం), his first love</li>
+            <li>Stage performance</li>
+            <li>Teaching and mentoring singers</li>
+            <li><i>Art to be added</i></li>
+            <li><i>Art to be added</i></li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap center">
+          <p class="eyebrow">Founders <span class="te">వ్యవస్థాపకులు</span></p>
+          <h2>Started by his family</h2>
+          <p class="lede">Swara Raga Sudha was founded by Dr. Talari Satish garu's sister and brother-in-law to
+            continue his work in Rajahmundry.</p>
+          <div class="founders" style="text-align:left">
+            <div class="founder rv">
+              <div class="avatar" aria-hidden="true">J K</div>
+              <div>
+                <h3>Dr. James Watt Kommu</h3>
+                <p class="role">Founder</p>
+                <p>Dr. James Watt Kommu is a visionary entrepreneur, philanthropist, and Vice President of Samanvaye Foundation. He leads multiple organizations, including Global Infotech Solutions, R.L. Klein, Sonus Software Solutions, and SQL Data Solutions Inc. His leadership reflects a strong commitment to innovation, business excellence, social empowerment, and community development. As President of the Telugu Association of Utah and Founder of SJK Entertainments, he actively promotes cultural heritage and community engagement.</p>
+              </div>
+            </div>
+            <div class="founder rv">
+              <div class="avatar" aria-hidden="true">S K</div>
+              <div>
+                <h3>Sudha Kommu</h3>
+                <p class="role">HONORY PRESIDENT</p>
+                <p>Sudha Kommu is a dedicated leader and philanthropist with a BA LLB qualification. As Honorary President of DTS Swara Raga Sudha, she is committed to promoting music, arts, cultural heritage, and community engagement while inspiring young talent and preserving artistic traditions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pink">
+        <div class="wrap split">
+          <div class="rv">
+            <p class="eyebrow">Objectives <span class="te">లక్ష్యాలు</span></p>
+            <h2>What we set out to do</h2>
+          </div>
+          <ul class="list rv">
+            <li>Teach singing with proper foundations and accessible support.</li>
+            <li>Present concerts and give new singers a stage, as he did.</li>
+            <li>Preserve and share Telugu keertanas and compositions.</li>
+            <li>Support students who cannot afford training.</li>
+            <li>Hold an annual programme in memory of Dr. Talari Satish garu.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="blush">
+        <div class="wrap center">
+          <p class="eyebrow">Committee <span class="te">కార్యవర్గం</span></p>
+          <h2>Our team</h2>
+          <p class="lede">The office bearers who guide Swara Raga Sudha, together with our founders.</p>
+          <div class="team5" id="team"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap center">
+          <p class="eyebrow">Values <span class="te">మా విలువలు</span></p>
+          <h2>What we value</h2>
+          <div class="cards">
+            <div class="card rv">
+              <div class="ico">01</div>
+              <h3>Sadhana</h3>
+              <p>Steady daily practice matters more than talent.</p>
+            </div>
+            <div class="card rv">
+              <div class="ico">02</div>
+              <h3>Guru-shishya spirit</h3>
+              <p>Learning with respect for teachers, tradition and each other.</p>
+            </div>
+            <div class="card rv">
+              <div class="ico">03</div>
+              <h3>Open doors</h3>
+              <p>No audition and no age limit. Every voice is welcome.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ PROGRAMMES ============ -->
+    <div class="view" id="v-programmes" hidden>
+      <div class="pagehead" style="background-image:url(images/concert.jpg)">
+        <div class="wrap">
+          <p class="te">కార్యక్రమాలు</p>
+          <h1>Programmes &amp; classes</h1>
+          <p class="crumbs"><a href="#home">Home</a> / <span>Programmes</span></p>
+          <p class="lede">Concerts are open to the public unless marked for members only.</p>
+        </div>
+      </div>
+      <section>
+        <div class="wrap">
+          <div class="filters" role="group" aria-label="Filter programmes">
+            <button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
+            <button class="chip" type="button" data-f="Concert" aria-pressed="false">Concerts</button>
+            <button class="chip" type="button" data-f="Workshop" aria-pressed="false">Workshops</button>
+            <button class="chip" type="button" data-f="Sabha" aria-pressed="false">Sabhas</button>
+          </div>
+          <div class="events" id="events-list"></div>
+          <p class="sample">Sample listings. Tell me the real dates and venues and I will replace them.</p>
+        </div>
+      </section>
+
+      <section class="pink">
+        <div class="wrap">
+          <span class="weekly">Weekly</span>
+          <h2>Weekly classes</h2>
+          <div class="tbl" style="margin-top:30px">
+            <table>
+              <thead>
+                <tr>
+                  <th>Batch</th>
+                  <th>Day</th>
+                  <th>Time</th>
+                  <th>Focus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Beginners</td>
+                  <td>Saturday</td>
+                  <td>5:00–6:30 pm</td>
+                  <td>Basic exercises, swara practice, simple songs</td>
+                </tr>
+                <tr>
+                  <td>Intermediate</td>
+                  <td>Sunday</td>
+                  <td>9:00–11:00 am</td>
+                  <td>Geethams, varnams, keertanas</td>
+                </tr>
+                <tr>
+                  <td>Advanced</td>
+                  <td>Wednesday</td>
+                  <td>6:30–8:30 pm</td>
+                  <td>Keertanas, improvisation, concert preparation</td>
+                </tr>
+                <tr>
+                  <td>Group singing</td>
+                  <td>Friday</td>
+                  <td>7:00–8:30 pm</td>
+                  <td>Annamayya and Ramadasu sankeertanas</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="sample">Sample timings. Confirm them with the committee before publishing.</p>
+
+          <div class="composer">
+            <h3>Composer's corner</h3>
+            <p style="margin:6px 0 0">Our repertoire draws on great Telugu composers. Choose one to read a short note.
+              <label for="composer" style="position:absolute;left:-9999px">Composer</label>
+              <select id="composer">
+                <option value="tyagaraja" selected>Tyagaraja</option>
+                <option value="annamayya">Annamayya</option>
+                <option value="ramadasu">Bhadrachala Ramadasu</option>
+                <option value="kshetrayya">Kshetrayya</option>
+                <option value="syama">Syama Sastri</option>
+              </select>
+            </p>
+            <p id="composerOut" style="margin:12px 0 0" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ GALLERY ============ -->
+    <div class="view" id="v-gallery" hidden>
+      <div class="pagehead" style="background-image:url(images/godavari-arch-bridge.jpg)">
+        <div class="wrap">
+          <p class="te">గ్యాలరీ</p>
+          <h1>Gallery</h1>
+          <p class="crumbs"><a href="#home">Home</a> / <span>Gallery</span></p>
+          <p class="lede">Legends, instruments and the Godavari. Photographs from our own programmes will be added here.
+          </p>
+        </div>
+      </div>
+      <section>
+        <div class="wrap">
+          <div class="filters" role="group" aria-label="Filter gallery" id="galFilters">
+            <button class="chip" type="button" data-g="all" aria-pressed="true">All</button>
+            <button class="chip" type="button" data-g="legend" aria-pressed="false">Legends</button>
+            <button class="chip" type="button" data-g="inst" aria-pressed="false">Instruments</button>
+            <button class="chip" type="button" data-g="river" aria-pressed="false">Godavari</button>
+          </div>
+          <div class="gallery" id="gallery" role="list"></div>
+          <div class="slot">Photos and recordings of Dr. Talari Satish garu's performances, and of our own programmes,
+            will be added here. Please send them to us.</div>
+          <details class="credits">
+            <summary>Photo credits</summary>
+            <ul id="credits"></ul>
+          </details>
+        </div>
+      </section>
+
+      <section class="pink tools">
+        <div class="wrap">
+          <p class="eyebrow">Practice <span class="te">సాధన</span></p>
+          <h2>Practise with us</h2>
+          <p class="lede">Two simple tools for daily practice. Sound plays only after you press a button.</p>
+          <div class="two-up">
+            <div class="card">
+              <h3>Tambura shruti</h3>
+              <p>A four-string tambura: Pa (or Ma), Sa, Sa, lower Sa. Pick your kattai and sing along.</p>
+              <div class="ctl">
+                <label for="scale">Kattai</label>
+                <select id="scale">
+                  <option value="130.81">1 (C)</option>
+                  <option value="138.59">1½ (C♯)</option>
+                  <option value="146.83">2 (D)</option>
+                  <option value="155.56">2½ (D♯)</option>
+                  <option value="164.81">3 (E)</option>
+                  <option value="174.61">4 (F)</option>
+                  <option value="185.00">4½ (F♯)</option>
+                  <option value="196.00" selected>5 (G)</option>
+                  <option value="207.65">5½ (G♯)</option>
+                  <option value="220.00">6 (A)</option>
+                </select>
+                <label for="string">Second string</label>
+                <select id="string">
+                  <option value="1.5">Pa</option>
+                  <option value="1.3333">Ma</option>
+                </select>
+                <button class="btn dark" id="droneBtn" type="button">Play shruti</button>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Adi Talam</h3>
+              <p>Eight beats: a laghu of four (clap, little, ring and middle fingers), then two drutams (clap and wave
+                each).</p>
+              <div class="beats" id="beats" aria-label="Eight beats of Adi Talam"></div>
+              <div class="ctl">
+                <button class="btn primary" id="taalBtn" type="button">Start</button>
+                <label for="tempo">Tempo: <span id="tempoVal">60</span> per minute</label>
+                <input id="tempo" type="range" min="30" max="140" value="60">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ JOIN & CONTACT ============ -->
+    <div class="view" id="v-join" hidden>
+      <div class="pagehead" style="background-image:url(images/godavari-river.jpg)">
+        <div class="wrap">
+          <p class="te">సభ్యత్వం</p>
+          <h1>Membership &amp; contact</h1>
+          <p class="crumbs"><a href="#home">Home</a> / <span>Contact</span></p>
+          <p class="lede">Every member can attend members-only sabhas and vote on the committee.</p>
+        </div>
+      </div>
+      <section class="pink">
+        <div class="wrap">
+          <p class="eyebrow">Get in touch <span class="te">సంప్రదించండి</span></p>
+          <h2>Apply and contact</h2>
+          <div class="join-grid">
+            <form id="joinForm" novalidate>
+              <label class="f">Full name<input id="name" name="name" autocomplete="name"><span class="err"
+                  id="e-name"></span></label>
+              <label class="f">Phone<input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"><span
+                  class="err" id="e-phone"></span></label>
+              <label class="f full">Email<input id="email" name="email" type="email" autocomplete="email"><span
+                  class="err" id="e-email"></span></label>
+              <label class="f">Membership
+                <select id="cat" name="cat">
+                  <option>Founding</option>
+                  <option>Annual</option>
+                  <option>Student</option>
+                  <option>Patron</option>
+                </select>
+              </label>
+              <label class="f">Experience
+                <select id="level" name="level">
+                  <option>Complete beginner</option>
+                  <option>Some training (1–3 years)</option>
+                  <option>Trained (3+ years)</option>
+                </select>
+              </label>
+              <label class="f full">Preferred style
+                <select id="style" name="style">
+                  <option>Carnatic classical</option>
+                  <option>Annamayya and devotional keertanas</option>
+                  <option>Telugu light music</option>
+                  <option>Telugu folk and film music</option>
+                </select>
+              </label>
+              <label class="f full">Anything we should know?<textarea id="note" name="note"></textarea></label>
+              <div class="full"><button class="btn primary" type="submit">Prepare my application</button></div>
+              <div class="result" id="result" aria-live="polite">
+                <b>Application ready.</b> This page does not send forms. Copy the text below and send it to the club's
+                email or phone number.
+                <pre id="resultText"></pre>
+                <button class="btn dark" type="button" id="copyBtn">Copy application</button> <span id="copied"
+                  class="err" style="color:#2b6b2f"></span>
+              </div>
+            </form>
+            <div class="contact">
+              <h3>Say hello</h3>
+              <div class="item"><b>Organisation</b>Swara Raga Sudha (DTS)</div>
+              <div class="item"><b>In memory of</b>Dr. Talari Satish garu</div>
+              <div class="item"><b>Founder</b>Dr. James Watt Kommu</div>
+              <div class="item"><b>Place</b>Rajahmundry, Andhra Pradesh<br>Add the full address and a map link</div>
+              <div class="item"><b>Phone</b><a href="tel:+918121377720">+91 81213 77720</a></div>
+              <div class="item"><b>Email</b><a href="mailto:info@drtalariswararaagasudha.com">info@drtalariswararaagasudha.com</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-mem">
+        <img src="images/dr-talari-satish.png" alt="">
+        <p>In loving memory of Dr. Talari Satish garu<span>Singer, artist of 19 arts, and guide to many voices. This
+            organisation carries his name.</span></p>
+      </div>
+      <div class="foot">
+        <div>
+          <a class="logo" href="#home"><img src="logo.png" alt="Swara Raga Sudha logo"></a>
+          <p><span class="te">స్వర రాగ సుధ</span></p>
+          <p>Bringing swara and raga to life through practice, devotion and the stage.</p>
+        </div>
+        <div>
+          <h6>Quick links</h6>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">His legacy</a></li>
+            <li><a href="#programmes">Our programmes</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#join">Contact us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6>Address</h6>
+          <p>Rajahmundry, Andhra Pradesh</p>
+          <p>Add the full address here</p>
+          <p>Classes: Wed, Fri, Sat &amp; Sun</p>
+        </div>
+        <div>
+          <h6>Say hello</h6>
+          <p><a href="mailto:info@drtalariswararaagasudha.com">info@drtalariswararaagasudha.com</a></p>
+          <p><a href="tel:+918121377720">+91 81213 77720</a></p>
+          <div class="social" style="margin-top:14px">
+            <a href="#" aria-label="Facebook (add link)"><svg viewBox="0 0 24 24">
+                <path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H7v4h2v9h4v-9h3l1-4h-4V9c0-.6.4-1 1-1z" />
+              </svg></a>
+            <a href="#" aria-label="YouTube (add link)"><svg viewBox="0 0 24 24">
+                <path
+                  d="M23 7.2a3 3 0 00-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 001 7.2 31 31 0 00.5 12 31 31 0 001 16.8a3 3 0 002.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 002.1-2.1 31 31 0 00.5-4.8 31 31 0 00-.5-4.8zM9.7 15V9l5.8 3-5.8 3z" />
+              </svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="copy"><span>Swara Raga Sudha (DTS) © 2026. All rights reserved.</span><span>Photo credits on the
+          Gallery page</span></div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c] }) }
+
+      /* ---------- Hero video banner ---------- */
+      var heroVideo = document.getElementById('heroVideo');
+      if (heroVideo && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        heroVideo.removeAttribute('autoplay'); heroVideo.pause(); heroVideo.controls = true;
+      }
+
+      /* ---------- Image data (Wikimedia Commons) ---------- */
+      var LEGENDS = [
+        { k: "ghantasala", n: "Ghantasala", y: "1922–1974", g: "Telugu film & devotional", pos: "70% center", a: "India Post, Government of India", l: "GODL-India", u: "https://commons.wikimedia.org/wiki/File:Ghantasala_Venkateswara_Rao_2003_stamp_of_India.jpg", alt: "Ghantasala on a 2003 Indian postage stamp" },
+        { k: "ms-subbulakshmi", n: "M. S. Subbulakshmi", y: "1916–2004", g: "Carnatic vocalist", a: "Saregama Carnatic", l: "CC BY 3.0", u: "https://commons.wikimedia.org/wiki/File:M._S._Subbulakshmi_(03).jpg" },
+        { k: "balamuralikrishna", n: "M. Balamuralikrishna", y: "1930–2016", g: "Carnatic vocalist & composer", a: "Fotokannan", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Vidwan_balamuralikrishna.jpg" },
+        { k: "p-susheela", n: "P. Susheela", y: "b. 1935", g: "Playback singer", a: "Vivvt (derivative work)", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:P._Susheela.jpg" },
+        { k: "spb", n: "S. P. Balasubrahmanyam", y: "1946–2020", g: "Playback singer", a: "Sriram Narasimhan, Silverscreen Media", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:S._P._Balasubrahmanyam_at_the_%27Gurkha%27_Audio_Launch.jpg" },
+        { k: "s-janaki", n: "S. Janaki", y: "b. 1938", g: "Playback singer", a: "Rishabh Tatiraju", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:S_Janaki_in_Pune,_India_2007.JPG" },
+        { k: "yesudas", n: "K. J. Yesudas", y: "b. 1940", g: "Carnatic & playback", a: "E P Sajeevan", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:K.J_Yesudas.JPG" },
+        { k: "lata", n: "Lata Mangeshkar", y: "1929–2022", g: "Playback singer", a: "Bollywood Hungama", l: "CC BY 3.0", u: "https://commons.wikimedia.org/wiki/File:Lata_Mangeshkar_-_still_29065_crop.jpg" },
+        { k: "rafi", n: "Mohammed Rafi", y: "1924–1980", g: "Playback singer", a: "India Post, Government of India", l: "GODL-India", u: "https://commons.wikimedia.org/wiki/File:Mohammed_Rafi_2016_postcard_of_India_crop-flip.jpg" },
+        { k: "bhimsen-joshi", n: "Bhimsen Joshi", y: "1922–2011", g: "Hindustani vocalist", a: "British Institute of Recorded Sound", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Bhimsen_Joshi.jpg" }
+      ];
+      var INSTR = [
+        { k: "veena", n: "Veena", te: "వీణ", d: "Saraswati's own instrument and the heart of Carnatic melody.", pos: "center 30%", a: "Yann", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Woman_with_veena,_Crafts_Museum,_New_Delhi,_India.jpg", alt: "Painting of a woman playing the veena" },
+        { k: "tambura", n: "Tambura", te: "తంబుర", d: "The drone that holds the sruti for every singer.", pos: "center 20%", a: "Martin spaink", l: "CC BY-SA 3.0", u: "https://commons.wikimedia.org/wiki/File:A_pair_of_female_vocal_tanpuras.jpg", alt: "A pair of tamburas" },
+        { k: "mridangam", n: "Mridangam", te: "మృదంగం", d: "The principal drum of a Carnatic concert, seen here in a temple carving.", a: "Shishirdasika", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Man_playing_Mridangam_in_Bhoganandeeshwara_Temple.jpg", alt: "Temple stone carving of a man playing the mridangam" },
+        { k: "flute", n: "Venu (Flute)", te: "వేణువు", d: "The bamboo flute, beloved instrument of Krishna.", a: "Vamsivadrevu", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:All_scales_of_Bansuris_in_a_set.jpg", alt: "A set of bamboo flutes" },
+        { k: "concert", n: "Violin", te: "వయొలిన్", d: "Part of Carnatic music for two centuries and a constant companion to the voice.", pos: "62% center", a: "Charles Haynes", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Carnatic_violins.jpg", alt: "Musicians playing violin and tabla beside a brass lamp" },
+        { k: "ghatam", n: "Ghatam", te: "ఘటం", d: "A clay pot that becomes a brilliant rhythm instrument.", a: "Sven.petersen", l: "Public domain", u: "https://commons.wikimedia.org/wiki/File:Ghatam.jpg", alt: "A red clay ghatam on grass" },
+        { k: "tabla", n: "Tabla", te: "తబలా", d: "The pair of drums at the heart of Hindustani and light music.", pos: "70% center", a: "Tahsin Shah", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:The_tabla_is_a_percussion_instrument_-_a_pair_of_drums_used_in_traditional,_classical,_popular_and_folk_music.jpg", alt: "A craftsman with a tabla and a dholak" }
+      ];
+      var RIVER = [
+        { k: "godavari-arch-bridge", n: "Godavari Arch Bridge", g: "Rajahmundry", a: "Kiran Kumar (Flickr)", l: "CC BY-SA 2.0", u: "https://commons.wikimedia.org/wiki/File:Godavari_Arch_bridge_at_Rajahmundry.jpg" },
+        { k: "godavari-sunset", n: "Sunset on the Godavari", g: "Rajahmundry", a: "Pavan santhosh.s", l: "CC BY-SA 4.0", u: "https://commons.wikimedia.org/wiki/File:Sunset_at_Godavari_from_Rajahmundry_02.jpg" },
+        { k: "godavari-river", n: "The Godavari", g: "Rajahmundry", a: "Radhika41", l: "CC BY 4.0", u: "https://commons.wikimedia.org/wiki/File:Godavari_river_at_Rajahmundry.jpg" }
+      ];
+
+      /* legends on home */
+      var lg = document.getElementById('legends');
+      LEGENDS.forEach(function (p) {
+        var f = document.createElement('figure'); f.className = 'legend rv';
+        f.innerHTML = '<div class="arch"><img loading="lazy" src="images/' + p.k + '.jpg" alt="' + esc(p.alt || p.n) + '"' + (p.pos ? ' style="object-position:' + p.pos + '"' : '') + '></div><figcaption><b>' + esc(p.n) + '</b><span class="yr">' + p.y + '</span><span>' + esc(p.g) + '</span></figcaption>';
+        lg.appendChild(f);
+      });
+
+      /* instruments on home */
+      var ins = document.getElementById('instruments');
+      INSTR.forEach(function (p) {
+        var f = document.createElement('figure'); f.className = 'inst rv';
+        f.innerHTML = '<img loading="lazy" src="images/' + p.k + '.jpg" alt="' + esc(p.alt) + '"' + (p.pos ? ' style="object-position:' + p.pos + '"' : '') + '><figcaption><span class="te">' + p.te + '</span><b>' + esc(p.n) + '</b><p>' + esc(p.d) + '</p></figcaption>';
+        ins.appendChild(f);
+      });
+      var v = document.createElement('figure'); v.className = 'inst voice rv';
+      v.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v4M8 22h8"/></svg><span class="te">గాత్రం</span><b>The Voice</b><p>The first and finest instrument. Everything we teach begins here.</p>';
+      ins.appendChild(v);
+
+      /* gallery + credits */
+      var gal = document.getElementById('gallery'), cr = document.getElementById('credits');
+      function addTile(p, cat, sub) {
+        var f = document.createElement('figure'); f.className = 'tile'; f.dataset.cat = cat; f.setAttribute('role', 'listitem');
+        f.innerHTML = '<img loading="lazy" src="images/' + p.k + '.jpg" alt="' + esc(p.alt || p.n) + '"' + (p.pos ? ' style="object-position:' + p.pos + '"' : '') + '><figcaption>' + esc(p.n) + '<span>' + esc(sub) + '</span></figcaption>';
+        gal.appendChild(f);
+        var li = document.createElement('li');
+        li.innerHTML = esc(p.n) + ': ' + esc(p.a) + ', ' + esc(p.l) + ', via <a href="' + p.u + '" target="_blank" rel="noopener">Wikimedia Commons</a>';
+        cr.appendChild(li);
+      }
+      LEGENDS.forEach(function (p) { addTile(p, 'legend', p.y + ' · ' + p.g) });
+      INSTR.forEach(function (p) { addTile(p, 'inst', p.te) });
+      RIVER.forEach(function (p) { addTile(p, 'river', p.g) });
+      var gb = document.querySelectorAll('#galFilters .chip');
+      gb.forEach(function (b) {
+        b.addEventListener('click', function () {
+          gb.forEach(function (x) { x.setAttribute('aria-pressed', 'false') }); b.setAttribute('aria-pressed', 'true');
+          Array.prototype.forEach.call(gal.children, function (t) { t.hidden = !(b.dataset.g === 'all' || t.dataset.cat === b.dataset.g) });
+        });
+      });
+
+      /* Office bearers */
+      var TEAM = [
+        ["Barath Chandra Desabathula", "President", "అధ్యక్షులు"],
+        ["Anandh Yentapalli", "Vice-President", "ఉపాధ్యక్షులు"],
+        ["T.V.V. Prasad", "Secretary", "కార్యదర్శి"],
+        ["Markendaylu Yall", "Joint Secretary", "ఉప కార్యదర్శి"],
+        ["Chella Raju", "Treasurer", "కోశాధికారి"]
+      ];
+      var tm = document.getElementById('team');
+      TEAM.forEach(function (t) {
+        var f = document.createElement('figure'); f.className = 'member rv';
+        f.innerHTML = '<div class="photo"><svg viewBox="0 0 100 125" width="60%" aria-hidden="true"><circle cx="50" cy="42" r="20" fill="#f1c9d0"/><path d="M12 125c0-28 17-46 38-46s38 18 38 46z" fill="#f1c9d0"/></svg></div><b>' + t[0] + '</b><span class="te">' + t[2] + '</span><span>' + t[1] + '</span>';
+        tm.appendChild(f);
+      });
+
+      /* ---------- Mobile menu ---------- */
+      var burger = document.querySelector('.burger'), nav = document.getElementById('mainnav');
+      burger.addEventListener('click', function () { var o = nav.classList.toggle('open'); burger.setAttribute('aria-expanded', o) });
+      nav.addEventListener('click', function (e) { if (e.target.tagName === 'A') { nav.classList.remove('open'); burger.setAttribute('aria-expanded', 'false') } });
+
+      /* ---------- Reveal on scroll ---------- */
+      var io = ('IntersectionObserver' in window) ? new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } });
+      }, { threshold: .12 }) : null;
+      function observe() { document.querySelectorAll('.view:not([hidden]) .rv:not(.in)').forEach(function (el) { io ? io.observe(el) : el.classList.add('in') }) }
+
+      /* ---------- Page switching by hash ---------- */
+      var PAGES = ['home', 'about', 'programmes', 'gallery', 'join'];
+      function route() {
+        var h = (location.hash || '#home').slice(1);
+        if (PAGES.indexOf(h) < 0) h = 'home';
+        PAGES.forEach(function (p) { document.getElementById('v-' + p).hidden = (p !== h) });
+        document.querySelectorAll('[data-nav]').forEach(function (a) {
+          if (a.dataset.nav === h) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+        });
+        if (heroVideo) { if (h === 'home' && heroVideo.hasAttribute('autoplay')) heroVideo.play().catch(function () { }); else heroVideo.pause(); }
+        window.scrollTo(0, 0);
+        observe();
+      }
+      window.addEventListener('hashchange', route);
+
+      /* ---------- Programmes ---------- */
+      var EVENTS = [
+        { d: "16", m: "Dec", t: "Dhanurmasam Annamayya Sankeertanalu", p: "Rajahmundry · 6:00 am · Open to all", c: "Concert" },
+        { d: "20", m: "Dec", t: "Beginners' Voice and Swara Workshop", p: "Class hall · 10:00 am · Guests welcome", c: "Workshop" },
+        { d: "27", m: "Dec", t: "Winter Sabha, members sing keertanas", p: "Club hall · 5:30 pm · Members only", c: "Sabha" },
+        { d: "14", m: "Jan", t: "Sankranti Sangeeta Sandhya", p: "Rajahmundry · 6:00 pm · Open to all", c: "Concert" },
+        { d: "24", m: "Jan", t: "Tyagaraja Aradhana, Pancharatna Gosthi Gayanam", p: "Class hall · 8:00 am · Open to all singers", c: "Concert" },
+        { d: "07", m: "Feb", t: "Telugu Light Music Evening", p: "Club hall · 5:30 pm · Members only", c: "Sabha" }
+      ];
+      function draw(el, items) {
+        el.innerHTML = '';
+        items.forEach(function (e) {
+          var a = document.createElement('article'); a.className = 'event';
+          a.innerHTML = '<div class="date"><b>' + e.d + '</b><span>' + e.m + '</span></div><div><h3>' + e.t + '</h3><p>' + e.p + '</p></div><span class="tag">' + e.c + '</span>';
+          el.appendChild(a);
+        });
+      }
+      var he = document.getElementById('home-events');
+      EVENTS.slice(0, 3).forEach(function (e) {
+        var a = document.createElement('article'); a.className = 'post rv';
+        a.innerHTML = '<div class="meta"><div class="date"><b>' + e.d + '</b><span>' + e.m + '</span></div><span class="tag">' + e.c + '</span></div><h3>' + e.t + '</h3><p>' + e.p + '</p><a class="more" href="#programmes">Details →</a>';
+        he.appendChild(a);
+      });
+      var list = document.getElementById('events-list');
+      draw(list, EVENTS);
+      document.querySelectorAll('[data-f]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          document.querySelectorAll('[data-f]').forEach(function (x) { x.setAttribute('aria-pressed', 'false') });
+          b.setAttribute('aria-pressed', 'true');
+          draw(list, EVENTS.filter(function (e) { return b.dataset.f === 'all' || e.c === b.dataset.f }));
+        });
+      });
+
+      route();
+
+      /* ---------- Composer's corner ---------- */
+      var NOTES = {
+        tyagaraja: "Tyagaraja (1767–1847) composed in Telugu at Tiruvaiyaru, mostly in praise of Rama. His five Pancharatna kritis are sung together every year at his Aradhana.",
+        annamayya: "Annamayya (1408–1503) served Lord Venkateswara at Tirumala and is credited with thousands of Telugu sankeertanas, the earliest known body of such songs.",
+        ramadasu: "Bhadrachala Ramadasu (17th century) built the Rama temple at Bhadrachalam and wrote devotional kirtanas still sung across Andhra and Telangana.",
+        kshetrayya: "Kshetrayya (17th century) wrote padams in Telugu, signed with the name Muvva Gopala, and is a pillar of the abhinaya and padam tradition.",
+        syama: "Syama Sastri (1762–1827) of Tiruvarur, one of the Trinity of Carnatic music, composed in Telugu, Tamil and Sanskrit, and is known for his swarajatis."
+      };
+      var cs = document.getElementById('composer'), co = document.getElementById('composerOut');
+      function setNote() { co.textContent = NOTES[cs.value] }
+      cs.addEventListener('change', setNote); setNote();
+
+      /* ---------- Audio ---------- */
+      var AC = window.AudioContext || window.webkitAudioContext, ctx = null;
+      function getCtx() { if (!ctx && AC) { ctx = new AC() } if (ctx && ctx.state === 'suspended') { ctx.resume() } return ctx }
+
+      var ACT = ["Clap", "Little", "Ring", "Middle", "Clap", "Wave", "Clap", "Wave"], GROUPS = [[0, 1, 2, 3], [4, 5], [6, 7]], CLAPS = { 0: 1, 4: 1, 6: 1 };
+      var beatsEl = document.getElementById('beats'), beatEls = [];
+      GROUPS.forEach(function (g) {
+        var vb = document.createElement('div'); vb.className = 'vib';
+        g.forEach(function (i) { var b = document.createElement('div'); b.className = 'beat'; b.innerHTML = (i + 1) + '<small>' + ACT[i] + '</small>'; vb.appendChild(b); beatEls.push(b) });
+        beatsEl.appendChild(vb);
+      });
+      var timer = null, pos = 0, tb = document.getElementById('taalBtn'), tempo = document.getElementById('tempo'), tv = document.getElementById('tempoVal');
+      function click(i) {
+        var c = getCtx(); if (!c) return;
+        var o = c.createOscillator(), g = c.createGain();
+        o.type = 'sine'; o.frequency.value = (i === 0) ? 880 : (CLAPS[i] ? 660 : 440);
+        g.gain.setValueAtTime(.0001, c.currentTime); g.gain.exponentialRampToValueAtTime(.25, c.currentTime + .005); g.gain.exponentialRampToValueAtTime(.0001, c.currentTime + .09);
+        o.connect(g); g.connect(c.destination); o.start(); o.stop(c.currentTime + .1);
+      }
+      function tick() { beatEls.forEach(function (e) { e.classList.remove('on') }); beatEls[pos].classList.add('on'); click(pos); pos = (pos + 1) % 8 }
+      tb.addEventListener('click', function () {
+        if (timer) { clearInterval(timer); timer = null; beatEls.forEach(function (e) { e.classList.remove('on') }); tb.textContent = 'Start' }
+        else { pos = 0; tick(); timer = setInterval(tick, 60000 / tempo.value); tb.textContent = 'Stop' }
+      });
+      tempo.addEventListener('input', function () { tv.textContent = tempo.value; if (timer) { clearInterval(timer); timer = setInterval(tick, 60000 / tempo.value) } });
+      window.addEventListener('hashchange', function () { if (timer && location.hash !== '#gallery') { clearInterval(timer); timer = null; tb.textContent = 'Start' } if (droneNodes && location.hash !== '#gallery') { stopDrone() } });
+
+      var droneNodes = null, db = document.getElementById('droneBtn');
+      function startDrone() {
+        var c = getCtx(); if (!c) return;
+        var sa = parseFloat(document.getElementById('scale').value), p = parseFloat(document.getElementById('string').value);
+        var master = c.createGain(); master.gain.value = 0; master.connect(c.destination);
+        master.gain.linearRampToValueAtTime(.5, c.currentTime + 1.5);
+        var strings = [[sa * p, 0], [sa * 2, 1], [sa * 2, 2], [sa, 3]], oscs = [], lfos = [];
+        strings.forEach(function (s) {
+          [1, 2, 3, 4].forEach(function (h) {
+            var o = c.createOscillator(), g = c.createGain(), l = c.createOscillator(), lg2 = c.createGain();
+            o.type = 'sine'; o.frequency.value = s[0] * h; g.gain.value = .18 / (h * h * .9);
+            l.frequency.value = .25; lg2.gain.value = .08 / h;
+            l.connect(lg2); lg2.connect(g.gain); o.connect(g); g.connect(master);
+            o.start(); l.start(c.currentTime + s[1]); oscs.push(o); lfos.push(l);
+          });
+        });
+        droneNodes = { master: master, oscs: oscs, lfos: lfos }; db.textContent = 'Stop shruti';
+      }
+      function stopDrone() {
+        if (!droneNodes) return; var n = droneNodes; droneNodes = null;
+        n.master.gain.linearRampToValueAtTime(0, ctx.currentTime + .6);
+        setTimeout(function () { n.oscs.concat(n.lfos).forEach(function (o) { try { o.stop() } catch (e) { } }) }, 700);
+        db.textContent = 'Play shruti';
+      }
+      db.addEventListener('click', function () { droneNodes ? stopDrone() : startDrone() });
+      ['scale', 'string'].forEach(function (id) { document.getElementById(id).addEventListener('change', function () { if (droneNodes) { stopDrone(); setTimeout(startDrone, 750) } }) });
+
+      /* ---------- Membership form ---------- */
+      var form = document.getElementById('joinForm');
+      function setErr(id, m) { document.getElementById('e-' + id).textContent = m }
+      form.addEventListener('submit', function (ev) {
+        ev.preventDefault();
+        var n = form.name.value.trim(), ph = form.phone.value.replace(/[\s-]/g, ''), em = form.email.value.trim(), ok = true;
+        setErr('name', ''); setErr('phone', ''); setErr('email', '');
+        if (n.length < 2) { setErr('name', 'Enter your full name.'); ok = false }
+        if (!/^(\+?91)?[6-9]\d{9}$/.test(ph)) { setErr('phone', 'Enter a 10-digit mobile number.'); ok = false }
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { setErr('email', 'Enter a valid email address.'); ok = false }
+        if (!ok) return;
+        var txt = ['Membership application, Swara Raga Sudha (DTS)', '', 'Name: ' + n, 'Phone: ' + form.phone.value.trim(), 'Email: ' + em, 'Membership: ' + form.cat.value, 'Experience: ' + form.level.value, 'Preferred style: ' + form.style.value, 'Notes: ' + (form.note.value.trim() || 'None')].join('\n');
+        document.getElementById('resultText').textContent = txt;
+        document.getElementById('result').style.display = 'block';
+        document.getElementById('copied').textContent = '';
+      });
+      document.getElementById('copyBtn').addEventListener('click', function () {
+        var t = document.getElementById('resultText').textContent, out = document.getElementById('copied');
+        try { navigator.clipboard.writeText(t).then(function () { out.textContent = 'Copied.' }, function () { out.textContent = 'Copy failed. Select the text and copy it.' }) }
+        catch (e) { out.textContent = 'Copy failed. Select the text and copy it.' }
+      });
+
+      /* ---------- Instrument motif on section eyebrows (veena, tambura, mridangam, venu, tabla in turn) ---------- */
+      var INST_ICONS = ['veena', 'tambura', 'mridangam', 'venu', 'tabla'];
+      document.querySelectorAll('.eyebrow').forEach(function (el, i) { el.setAttribute('data-inst', INST_ICONS[i % INST_ICONS.length]) });
+    })();
+  </script>
+</body>
+
+</html>

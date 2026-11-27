@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Swara Raga Sudha (DTS)</title>
+  <title>Swara Raga Sudha</title>
   <meta name="description"
     content="Swara Raga Sudha (DTS) – a singers' organisation in Rajahmundry, founded in loving memory of Dr. Talari Satish garu.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1479,6 +1479,24 @@
       text-align: center
     }
 
+    .team-sub {
+      margin: 70px 0 0;
+      font: 600 1.5rem var(--head);
+      color: var(--ink)
+    }
+
+    .team-sub .te {
+      display: block;
+      margin-top: 4px;
+      font-family: var(--tel);
+      color: var(--red);
+      font-size: 1rem
+    }
+
+    .team-sub + .team5 {
+      margin-top: 30px
+    }
+
     .member .photo {
       aspect-ratio: 1;
       border-radius: 50%;
@@ -2607,8 +2625,10 @@
         <div class="wrap center">
           <p class="eyebrow">Committee <span class="te">కార్యవర్గం</span></p>
           <h2>Our team</h2>
-          <p class="lede">The office bearers who guide Swara Raga Sudha, together with our founders.</p>
+          <p class="lede">The office bearers and executive committee who guide Swara Raga Sudha, together with our founders.</p>
           <div class="team5" id="team"></div>
+          <h3 class="team-sub">Executive Committee Members <span class="te">కార్యవర్గ సభ్యులు</span></h3>
+          <div class="team5" id="exec"></div>
         </div>
       </section>
 
@@ -3001,15 +3021,27 @@
         ["Barath Chandra Desabathula", "President", "అధ్యక్షులు"],
         ["Anandh Yentapalli", "Vice-President", "ఉపాధ్యక్షులు"],
         ["T.V.V. Prasad", "Secretary", "కార్యదర్శి"],
-        ["Markendaylu Yall", "Joint Secretary", "ఉప కార్యదర్శి"],
+        ["Markendayalu Yalla", "Joint Secretary", "ఉప కార్యదర్శి"],
         ["Chella Raju", "Treasurer", "కోశాధికారి"]
       ];
-      var tm = document.getElementById('team');
-      TEAM.forEach(function (t) {
-        var f = document.createElement('figure'); f.className = 'member rv';
-        f.innerHTML = '<div class="photo"><svg viewBox="0 0 100 125" width="60%" aria-hidden="true"><circle cx="50" cy="42" r="20" fill="#f1c9d0"/><path d="M12 125c0-28 17-46 38-46s38 18 38 46z" fill="#f1c9d0"/></svg></div><b>' + t[0] + '</b><span class="te">' + t[2] + '</span><span>' + t[1] + '</span>';
-        tm.appendChild(f);
-      });
+      /* Executive committee members */
+      var EXEC = [
+        ["Ms. P. Girija Rani", "Executive Committee Member", "కార్యవర్గ సభ్యులు"],
+        ["Dharma Raju", "Executive Committee Member", "కార్యవర్గ సభ్యులు"],
+        ["Suneetha Chowdary", "Executive Committee Member", "కార్యవర్గ సభ్యులు"],
+        ["Murali Rayapati", "Executive Committee Member", "కార్యవర్గ సభ్యులు"],
+        ["Sarath Babu Garapati", "Executive Committee Member", "కార్యవర్గ సభ్యులు"]
+      ];
+      function renderTeam(list, id) {
+        var box = document.getElementById(id);
+        list.forEach(function (t) {
+          var f = document.createElement('figure'); f.className = 'member rv';
+          f.innerHTML = '<div class="photo"><svg viewBox="0 0 100 125" width="60%" aria-hidden="true"><circle cx="50" cy="42" r="20" fill="#f1c9d0"/><path d="M12 125c0-28 17-46 38-46s38 18 38 46z" fill="#f1c9d0"/></svg></div><b>' + t[0] + '</b><span class="te">' + t[2] + '</span><span>' + t[1] + '</span>';
+          box.appendChild(f);
+        });
+      }
+      renderTeam(TEAM, 'team');
+      renderTeam(EXEC, 'exec');
 
       /* ---------- Mobile menu ---------- */
       var burger = document.querySelector('.burger'), nav = document.getElementById('mainnav');

@@ -28,6 +28,8 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
+          # GoDaddy's FTP server can be slow to answer; wait up to 2 minutes (default is 30s).
+          timeout: 120000
           # The FTP account is locked to the site's document root, so upload to its top level.
           server-dir: ${{ vars.FTP_SERVER_DIR || './' }}
           exclude: |

@@ -1,0 +1,39 @@
+# Uploads the website to GoDaddy hosting over FTP every time code is pushed to main.
+# Needs three repository secrets (Settings -> Secrets and variables -> Actions):
+#   FTP_SERVER    e.g. ftp.drtalariswararaagasudha.com or the server IP from cPanel
+#   FTP_USERNAME  the cPanel / FTP username
+#   FTP_PASSWORD  the FTP password
+# Optional repository variable FTP_SERVER_DIR (default: public_html/)
+name: Deploy to GoDaddy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-godaddy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Upload changed files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            CNAME
+            .nojekyll
+            index-old.html
+            index-v2.html

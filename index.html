@@ -1510,6 +1510,13 @@
       max-width: 170px
     }
 
+    .member .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top
+    }
+
     .member b {
       display: block;
       font: 600 1.05rem var(--head);
@@ -3018,25 +3025,29 @@
 
       /* Office bearers */
       var TEAM = [
-        ["Barath Chandra Desabathula", "President", "అధ్యక్షులు"],
-        ["Anandh Yentapalli", "Vice-President", "ఉపాధ్యక్షులు"],
-        ["T.V.V. Prasad", "Secretary", "కార్యదర్శి"],
-        ["Markendayalu Yalla", "Joint Secretary", "ఉప కార్యదర్శి"],
-        ["Chella Raju", "Treasurer", "కోశాధికారి"]
+        ["Barath Chandra Desabathula", "President", "అధ్యక్షులు", "barath-chandra-desabathula"],
+        ["Anandh Yentapalli", "Vice-President", "ఉపాధ్యక్షులు", "anandh-yentapalli"],
+        ["T.V.V. Prasad", "Secretary", "కార్యదర్శి", "tvv-prasad"],
+        ["Markendayalu Yalla", "Joint Secretary", "ఉప కార్యదర్శి", "markendayalu-yalla"],
+        ["Chella Raju", "Treasurer", "కోశాధికారి", "chella-raju"]
       ];
       /* Executive committee members */
       var EXEC = [
-        ["Ms. P. Girija Rani", "Executive Committee Member", "కార్యవర్గ సభ్యులు"],
+        ["Ms. P. Girija Rani", "Executive Committee Member", "కార్యవర్గ సభ్యులు", "p-girija-rani"],
         ["Dharma Raju", "Executive Committee Member", "కార్యవర్గ సభ్యులు"],
-        ["Suneetha Chowdary", "Executive Committee Member", "కార్యవర్గ సభ్యులు"],
-        ["Murali Rayapati", "Executive Committee Member", "కార్యవర్గ సభ్యులు"],
-        ["Sarath Babu Garapati", "Executive Committee Member", "కార్యవర్గ సభ్యులు"]
+        ["Suneetha Chowdary", "Executive Committee Member", "కార్యవర్గ సభ్యులు", "suneetha-chowdary"],
+        ["Murali Rayapati", "Executive Committee Member", "కార్యవర్గ సభ్యులు", "murali-rayapati"],
+        ["Sarath Babu Garapati", "Executive Committee Member", "కార్యవర్గ సభ్యులు", "sarath-babu-garapati"]
       ];
       function renderTeam(list, id) {
         var box = document.getElementById(id);
         list.forEach(function (t) {
           var f = document.createElement('figure'); f.className = 'member rv';
-          f.innerHTML = '<div class="photo"><svg viewBox="0 0 100 125" width="60%" aria-hidden="true"><circle cx="50" cy="42" r="20" fill="#f1c9d0"/><path d="M12 125c0-28 17-46 38-46s38 18 38 46z" fill="#f1c9d0"/></svg></div><b>' + t[0] + '</b><span class="te">' + t[2] + '</span><span>' + t[1] + '</span>';
+          /* t[3] = photo file name in images/team/ (optional; placeholder icon if missing) */
+          var photo = t[3]
+            ? '<img loading="lazy" src="images/team/' + t[3] + '.jpg" alt="' + t[0] + '">'
+            : '<svg viewBox="0 0 100 125" width="60%" aria-hidden="true"><circle cx="50" cy="42" r="20" fill="#f1c9d0"/><path d="M12 125c0-28 17-46 38-46s38 18 38 46z" fill="#f1c9d0"/></svg>';
+          f.innerHTML = '<div class="photo">' + photo + '</div><b>' + t[0] + '</b><span class="te">' + t[2] + '</span><span>' + t[1] + '</span>';
           box.appendChild(f);
         });
       }
